@@ -217,7 +217,8 @@
    "sneakers": "Up to 3 pics per color from reverse image search; first online source's other views first; 2 if 3 cannot be found, 1 if 2 cannot be found; cropped DHGate photo only as a last resort."
   },
   "public_facing_name": "The real product name (the 'public_name' field here, and the tracker sheet's 'Real product name' column). This is the name the website shows customers. It must match the photo.",
-  "store_folder": "Supplier store name (casualyn, museround27, damai2023). Default store for the current batch is damai2023 unless stated otherwise.",
-  "source_color_name": "The color name the supplier store uses for the item (e.g. 'Green 12/100'). This is the name to use when ordering \u2014 it often does NOT describe the garment's real color (the 'Green 12/100' garment is black). Record it exactly as the store shows it, next to the real color, so the two are never confused."
+  "store_folder": "The folder directly under each brand folder IS the store name \u2014 the supplier (usually DHGate) store the item is ordered from (e.g. damai2023, casualyn, museround27). The 'store' field on every item repeats it. When an order comes in, use store + source_label + source_link together to find the exact listing to order from. If store is TBD, the store is not known yet and the order cannot be placed until it is found.",
+  "source_color_name": "The color name the supplier store uses for the item (e.g. 'Green 12/100'). This is the name to use when ordering \u2014 it often does NOT describe the garment's real color (the 'Green 12/100' garment is black). Record it exactly as the store shows it, next to the real color, so the two are never confused.",
+  "ordering": "An order must carry three things: store name (the store folder name), source label (the color subfolder name, e.g. 'LightPink 41/100'), and source link (the exact listing page). The public-facing name is for customers only \u2014 never use it to order."
  }
 }

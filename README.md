@@ -49,20 +49,43 @@ word often does NOT describe the garment — the `Green 12/100` garment is
 black. The source color name is the name to use when ordering; the real
 color is the name customers see. Never confuse the two.
 
+## Store names — how ordering works (read this first)
+
+**The folder directly under each brand folder IS the store name.**
+That folder's name is the name of the supplier store the item is ordered
+from — usually a DHGate store (e.g. `damai2023`, `casualyn`,
+`museround27`). It is not a generic label. When a customer buys something,
+the order must carry these three things together, because together they
+point Robert to the exact listing to order from:
+
+1. **Store name** — the folder name (also the `store` field on every item
+   in `catalog.json` / `catalog.csv` and the `Store` column in the tracker
+   sheet).
+2. **Source label** — the color subfolder name (e.g. `LightPink 41/100`).
+3. **Source link** — the exact listing page for that item.
+
+Example: an order for the Tape Type hoodie reads store `damai2023`,
+label `LightPink 41/100`, link
+`https://editorialist.com/p/balenciaga-tape-type-ripped-pocket-hoodie-oversized-fluo-yellow/?color=black`.
+The public-facing name (`Balenciaga Tape Type Hoodie Oversized, Faded
+Black`) is for customers only — never use it to order. If an item's store
+is `TBD`, the store is not known yet and the order cannot be placed until
+it is found.
+
 ## Drive structure
 
 ```
 designer clothing/
 ├── hoodies/                                  (ID 1VF9SrirUMgwGutQZmnR5jwgnjpyowNUv)
 │   ├── Balenciaga/                           (ID 1oekTNZ4pi3Ob74TH7w10Mf05ZAeff56r)
-│   │   ├── casualyn/                         (DHGate store; item 1119231452)
-│   │   └── damai2023/                        (ID 1I7cWey4y-7fTWWR-tCgSdwFSX9tZZe0G)
+│   │   ├── casualyn/                         (STORE — DHGate store; item 1119231452)
+│   │   └── damai2023/                        (STORE — DHGate store; ID 1I7cWey4y-7fTWWR-tCgSdwFSX9tZZe0G)
 │   │       ├── Green 12/100/
 │   │       ├── Olive 40/100/
 │   │       ├── LightPink 41/100/
 │   │       └── Black 11/100/                 (pending — link missing)
 │   └── Louis Vuitton/                       (ID 1vZiT9efdXISdIkIC1wdbRaNZVHBBmS5E)
-│       └── museround27/                      (ID 1k9rBCOabFhXurNWa4OXGgOaLShixMFDw)
+│       └── museround27/                      (STORE; ID 1k9rBCOabFhXurNWa4OXGgOaLShixMFDw)
 ├── jeans/
 │   └── Purple Brand/                         (YUPOO drop — PAUSED, see below)
 ├── outerwear/
