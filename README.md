@@ -107,7 +107,7 @@ Summary (2026-11-08):
 | Green 12/100 | damai2023 | Balenciaga Retro Printed Hoodie (Top League multi-logo design) | Done — front + back in Drive |
 | Olive 40/100 | damai2023 | TBD — Balenciaga stencil logo hoodie (BALENC AGA) | Done — front + back in Drive; real name still needed |
 | LightPink 41/100 | damai2023 | Balenciaga Tape Type Hoodie Oversized, Faded Black | Done — all 6 photos in Drive |
-| Black 11/100 | damai2023 | TBD | Pending — listing link missing |
+| Black 11/100 | damai2023 | Balenciaga Racing Logo Print Long Sleeve Hoodie | Link found (Reversible, $1,000) — photos pending |
 | casualyn (53 files) | casualyn | 15 Balenciaga designs, real names in REPLACEMENTS log | 15 replaced with authentic photos; 38 still DHGate originals, delete-vs-keep decision pending |
 | museround27 (6 files) | museround27 | Louis Vuitton monogram crewneck sweatshirts | Done — cropped screenshots, colors 1, 2, 3, 5, 6, 7 |
 | Sneakers, DHGate 1085634430 | TBD | Balenciaga Track trainers | Blocked — DHGate page unreadable (see below) |
@@ -129,7 +129,7 @@ Notes:
   Store name and colors are unknown. Unblock by opening the link in the
   live browser and handing control back, or by sending screenshots of the
   page (store name + color options).
-- **Black 11/100:** no listing link was ever sent. Needs the link.
+- **Black 11/100:** link found — Reversible listing 583629410, $1,000, brand new, size JP 1. Photos still pending: Reversible blocks direct reads (Cloudflare) and the browser could not load the page. Needs the first 2 photos as screenshots, or the link opened in the live browser.
 - **casualyn 38 files:** Robert to decide — delete the remaining DHGate
   originals, or keep them as placeholders until a real photo turns up.
 - **Olive 40/100 real name:** not yet identified.
