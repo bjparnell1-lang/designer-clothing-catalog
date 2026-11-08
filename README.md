@@ -72,6 +72,25 @@ Black`) is for customers only — never use it to order. If an item's store
 is `TBD`, the store is not known yet and the order cannot be placed until
 it is found.
 
+**Per-item record — every product carries all four, when available:**
+store name, source link, color identifier, and numbering. They are
+separate fields on every item in `catalog.json` / `catalog.csv` (and
+separate columns in the tracker sheet), so nothing has to be parsed out
+of a label:
+
+- **Store name** — e.g. `damai2023` (see above).
+- **Source link** — the exact listing page, when there is one.
+- **Color identifier** — the color word on its own, e.g. `LightPink`.
+- **Numbering** — the item's number in the store's listing, written
+  `N/100`, e.g. `41/100` means item 41 out of 100. So the label
+  `LightPink 41/100` splits into color identifier `LightPink` +
+  numbering `41/100`. A label like `3/100` would mean item 3 out of 100.
+  If a listing has no numbering, the field is left blank.
+
+(Sets that predate this system don't have per-item numbering: the
+`casualyn` files use the store's option codes `a1`–`a30` in their file
+names, and the `museround27` files use `color1`–`color7`.)
+
 ## Drive structure
 
 ```
