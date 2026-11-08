@@ -17,13 +17,14 @@
    "public_name": "Balenciaga Retro Printed Hoodie (Top League multi-logo design)",
    "retail_price_usd": 825,
    "source_label": "Green 12/100",
-   "source_link": "https://www.grailed.com/listings/94313232-balenciaga-balenciaga-retro-printed-hoodie-38-men; https://us.vestiairecollective.com/men-clothing/knitwear-sweatshirts/balenciaga/black-cotton-balenciaga-knitwear-sweatshirt-71528379.shtml",
+   "source_link": "",
    "source_type": "Grailed listing 94313232",
    "status": "done",
    "store": "damai2023",
    "source_color_name": "Green 12/100",
    "color_identifier": "Green",
-   "numbering": "12/100"
+   "numbering": "12/100",
+   "photo_reference_link": "https://www.grailed.com/listings/94313232-balenciaga-balenciaga-retro-printed-hoodie-38-men; https://us.vestiairecollective.com/men-clothing/knitwear-sweatshirts/balenciaga/black-cotton-balenciaga-knitwear-sweatshirt-71528379.shtml"
   },
   {
    "brand": "Balenciaga",
@@ -46,7 +47,8 @@
    "store": "damai2023",
    "source_color_name": "Olive 40/100",
    "color_identifier": "Olive",
-   "numbering": "40/100"
+   "numbering": "40/100",
+   "photo_reference_link": ""
   },
   {
    "brand": "Balenciaga",
@@ -67,13 +69,14 @@
    "public_name": "Balenciaga Tape Type Hoodie Oversized, Faded Black",
    "retail_price_usd": 1514,
    "source_label": "LightPink 41/100",
-   "source_link": "https://editorialist.com/p/balenciaga-tape-type-ripped-pocket-hoodie-oversized-fluo-yellow/?color=black",
+   "source_link": "",
    "source_type": "Editorialist listing",
    "status": "done",
    "store": "damai2023",
    "source_color_name": "LightPink 41/100",
    "color_identifier": "LightPink",
-   "numbering": "41/100"
+   "numbering": "41/100",
+   "photo_reference_link": "https://editorialist.com/p/balenciaga-tape-type-ripped-pocket-hoodie-oversized-fluo-yellow/?color=black"
   },
   {
    "brand": "Balenciaga",
@@ -87,13 +90,14 @@
    "public_name": "Balenciaga Racing Logo Print Long Sleeve Hoodie",
    "retail_price_usd": 1000,
    "source_label": "Black 11/100",
-   "source_link": "https://www.reversible.com/user/ubvintage/listings/balenciaga-balenciaga-racing-logo-print-long-sleeve-hoodie-583629410",
+   "source_link": "",
    "source_type": "",
    "status": "link found - photos pending",
    "store": "damai2023",
    "source_color_name": "Black 11/100",
    "color_identifier": "Black",
-   "numbering": "11/100"
+   "numbering": "11/100",
+   "photo_reference_link": "https://www.reversible.com/user/ubvintage/listings/balenciaga-balenciaga-racing-logo-print-long-sleeve-hoodie-583629410"
   },
   {
    "brand": "Balenciaga",
@@ -129,7 +133,8 @@
    "store": "casualyn",
    "source_color_name": "",
    "color_identifier": "",
-   "numbering": ""
+   "numbering": "",
+   "photo_reference_link": ""
   },
   {
    "brand": "Louis Vuitton",
@@ -156,7 +161,8 @@
    "store": "museround27",
    "source_color_name": "",
    "color_identifier": "",
-   "numbering": ""
+   "numbering": "",
+   "photo_reference_link": ""
   },
   {
    "brand": "Balenciaga",
@@ -176,7 +182,8 @@
    "store": "TBD",
    "source_color_name": "",
    "color_identifier": "",
-   "numbering": ""
+   "numbering": "",
+   "photo_reference_link": ""
   },
   {
    "brand": "Purple Brand",
@@ -196,7 +203,8 @@
    "store": "thomamiri (YUPOO)",
    "source_color_name": "",
    "color_identifier": "",
-   "numbering": ""
+   "numbering": "",
+   "photo_reference_link": ""
   }
  ],
  "meta": {
@@ -235,9 +243,11 @@
   "public_facing_name": "The real product name (the 'public_name' field here, and the tracker sheet's 'Real product name' column). This is the name the website shows customers. It must match the photo.",
   "store_folder": "The folder directly under each brand folder IS the store name \u2014 the supplier (usually DHGate) store the item is ordered from (e.g. damai2023, casualyn, museround27). The 'store' field on every item repeats it. When an order comes in, use store + source_label + source_link together to find the exact listing to order from. If store is TBD, the store is not known yet and the order cannot be placed until it is found.",
   "source_color_name": "The color name the supplier store uses for the item (e.g. 'Green 12/100'). This is the name to use when ordering \u2014 it often does NOT describe the garment's real color (the 'Green 12/100' garment is black). Record it exactly as the store shows it, next to the real color, so the two are never confused.",
-  "ordering": "An order must carry three things: store name (the store folder name), source label (the color subfolder name, e.g. 'LightPink 41/100'), and source link (the exact listing page). The public-facing name is for customers only \u2014 never use it to order.",
+  "ordering": "An order needs three things together: store name + source label + source link, where source link is the DHGate listing. The public-facing name is for customers only, never for ordering. The photo reference link is never part of an order.",
   "color_identifier": "The color word from the source label, on its own (e.g. 'LightPink', 'Green', 'Black'). This is the color name the supplier store uses for the item \u2014 it often does NOT describe the garment's real color. Use it with the numbering to identify the exact store variant.",
   "numbering": "The item's number within the store's listing, written as N/100 (e.g. '41/100' means item 41 out of 100). It is the second half of the source label: 'LightPink 41/100' splits into color identifier 'LightPink' + numbering '41/100'. Record it exactly as shown; if a listing has no numbering, leave it blank.",
-  "per_item_record": "Every product carries: store name, source link (when available), color identifier, and numbering (when available). Together with the source label they identify the exact store variant to order. The public-facing name and real color are for customers only."
+  "per_item_record": "Every product carries: store name, source link (DHGate ordering link, when available), color identifier, and numbering (when available). The photo reference link is a separate fifth field and is never an ordering source. Together with the source label they identify the exact store variant to order.",
+  "source_link": "The ordering link ONLY: the DHGate listing (or YUPOO category for the Purple Brand drop) where the item is bought. Never a Grailed, Vestiaire, Editorialist, Saks, StockX, or Reversible link \u2014 those are photo references, not sources. Empty means the DHGate ordering link has not been provided yet.",
+  "photo_reference_link": "Where the real, unedited photo was found (Grailed, Vestiaire Collective, Editorialist, Saks, StockX, Reversible, Kering DAM, etc.). This link exists ONLY to show where the public-facing photo came from \u2014 it is NOT a source and must NEVER be used to order. The photo itself is the product image customers see; the link is provenance only."
  }
 }

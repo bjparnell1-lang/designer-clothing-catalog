@@ -65,21 +65,48 @@ point Robert to the exact listing to order from:
 3. **Source link** — the exact listing page for that item.
 
 Example: an order for the Tape Type hoodie reads store `damai2023`,
-label `LightPink 41/100`, link
-`https://editorialist.com/p/balenciaga-tape-type-ripped-pocket-hoodie-oversized-fluo-yellow/?color=black`.
-The public-facing name (`Balenciaga Tape Type Hoodie Oversized, Faded
-Black`) is for customers only — never use it to order. If an item's store
-is `TBD`, the store is not known yet and the order cannot be placed until
-it is found.
+label `LightPink 41/100`, link = the DHGate listing for that item
+(the DHGate link for the damai2023 batch has not been provided yet —
+`source_link` is empty until it is). The public-facing name
+(`Balenciaga Tape Type Hoodie Oversized, Faded Black`) is for customers
+only — never use it to order. If an item's store is `TBD`, the store is
+not known yet and the order cannot be placed until it is found.
 
-**Per-item record — every product carries all four, when available:**
-store name, source link, color identifier, and numbering. They are
-separate fields on every item in `catalog.json` / `catalog.csv` (and
-separate columns in the tracker sheet), so nothing has to be parsed out
-of a label:
+**Source links vs photo reference links — do not mix these up.**
+There are two different kinds of link on every item, and they are never
+interchangeable:
+
+- **Source link** — where the item is BOUGHT: the DHGate listing (or
+  the YUPOO category for the Purple Brand drop). This is the only link
+  that belongs in an order, together with the store name and source
+  label.
+- **Photo reference link** — where the real, unedited photo was FOUND
+  (Grailed, Vestiaire Collective, Editorialist, Saks, StockX,
+  Reversible, Kering DAM, etc.). DHGate photos are edited — brand
+  names blocked or truncated, e.g. "balen" instead of "Balenciaga" —
+  so the real photo is found by reverse image search and saved as the
+  product image customers see. The link only records where that photo
+  came from. It is NOT a source and must NEVER be used to order.
+
+A past mistake, corrected 2026-11-08: the Grailed, Vestiaire,
+Editorialist, and Reversible links for the damai2023 items were
+recorded as source links. They have been moved to
+`photo_reference_link` in `catalog.json` / `catalog.csv` and to the
+"Photo reference link" column in the tracker sheet. Their `source_link`
+is empty until the DHGate ordering links are provided.
+
+**Per-item record — every product carries all five, when available:**
+store name, source link (DHGate ordering link), color identifier,
+numbering, and photo reference link. They are separate fields on every
+item in `catalog.json` / `catalog.csv` (and separate columns in the
+tracker sheet), so nothing has to be parsed out of a label:
 
 - **Store name** — e.g. `damai2023` (see above).
-- **Source link** — the exact listing page, when there is one.
+- **Source link** — the DHGate listing where the item is bought, when
+  there is one. Never a photo reference link.
+- **Photo reference link** — where the real photo was found (Grailed,
+  Vestiaire, Editorialist, etc.). Provenance for the public-facing
+  image only. Never used to order.
 - **Color identifier** — the color word on its own, e.g. `LightPink`.
 - **Numbering** — the item's number in the store's listing, written
   `N/100`, e.g. `41/100` means item 41 out of 100. So the label
