@@ -273,7 +273,9 @@ Folder rules:
   name in the search (e.g. Balenciaga) so the results are only that
   brand's pictures. Exception: when Robert
   explicitly says to save the screenshots he sent (cropped), save those
-  as instructed.
+  as instructed. If the same real photo is already used for another
+  store's item, tell Robert — but still save the new source, so the
+  image carries two sources.
 - Product-only images. Never whole webpages, listing UI, or review text.
 
 ## Current items

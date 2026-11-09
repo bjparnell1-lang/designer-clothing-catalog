@@ -183,6 +183,15 @@ one (t-shirts, hoodies); skip it when it doesn't make sense (socks).
 If Robert sent the real photo himself, use it as-is after a visual
 check.
 
+**Duplicate photo — same image, two sources.** If the search turns
+up the SAME real photo already used for another item from a different
+store, tell Robert you already have an image for it — but still save
+the source for the new one. Do not save a second copy of the photo;
+reuse the existing file. The image then has TWO sources: record both
+— the first item's store + source link, and the new item's store +
+source link — in the tracker notes and catalog notes for both items,
+so either order resolves to the right source.
+
 ### Photo sources — priority order (set by Robert, 2026-11-09)
 
 When a search surfaces several of these sites, use them in this order.
@@ -462,6 +471,13 @@ Update all three files, then commit them together:
     category in the queue or tracker is only a starting guess — if the
     AI's detection differs, file it under the detected category and
     update the sheet.
+15. **Duplicate photo, two sources (2026-11-09).** If the same real
+    photo is already used for another store's item, tell Robert you
+    already have an image for it — but still save the new source.
+    Reuse the existing photo file (no second copy); record BOTH
+    sources in the tracker and catalog notes for both items, so the
+    image carries two sources and either order resolves to the right
+    one.
 
 ## Current state (2026-11-08)
 
