@@ -156,6 +156,13 @@ after 53 DHGate images were saved by mistake and had to be deleted
 (the whole `casualyn` folder and the `museround27` folder were trashed
 the same day — do not re-add DHGate photos there or anywhere).
 
+**Check Drive and the tracker first.** Before any reverse image
+search, check whether the same item / photo is already in Drive or in
+the tracker list. If it is, keep the photo that is already there — no
+reverse image search needed. Still record the new source (store +
+DHGate source link) for the new item, so Robert has the option of
+which source to order from. The photo then has two sources.
+
 Order of search for the real, unedited photo:
 
 1. **Reverse image search first** — the highest priority. If it finds
@@ -473,7 +480,10 @@ Update all three files, then commit them together:
     Reuse the existing photo file (no second copy); record BOTH
     sources in the tracker and catalog notes for both items, so the
     image carries two sources and either order resolves to the right
-    one.
+    one. Check Drive and the tracker first, before any reverse image
+    search: if the photo is already there, keep it and skip the
+    search — but still record the new source, so Robert has the
+    option of which source to order from.
 
 ## Current state (2026-11-08)
 

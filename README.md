@@ -275,7 +275,9 @@ Folder rules:
   explicitly says to save the screenshots he sent (cropped), save those
   as instructed. If the same real photo is already used for another
   store's item, tell Robert — but still save the new source, so the
-  image carries two sources.
+  image carries two sources. Before searching, check Drive and the
+  tracker first — if the photo is already there, keep it and skip the
+  reverse image search, but still record the new source.
 - Product-only images. Never whole webpages, listing UI, or review text.
 
 ## Current items
