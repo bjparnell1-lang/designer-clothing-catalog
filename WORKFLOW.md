@@ -147,8 +147,9 @@ Order of search for the real, unedited photo:
 
 1. **Reverse image search first** — the highest priority. If it finds
    a site with the actual image, use that.
-2. Then StockX, eBay, Mercari, Grailed, and other listing/retailer
-   sites.
+2. Then the priority sites in order — Reversible, Vestiaire Collective,
+   Grailed, Editorialist, Saks Fifth Avenue, StockX — then Kering DAM,
+   MR PORTER, eBay, Mercari, and other listing/retailer sites.
 3. The photo link Robert posted, if he posted one.
 
 The real photo must show the **full brand name, unedited** — never a
@@ -162,22 +163,22 @@ one (t-shirts, hoodies); skip it when it doesn't make sense (socks).
 If Robert sent the real photo himself, use it as-is after a visual
 check.
 
-### Photo sources used so far — priority order pending
+### Photo sources — priority order (set by Robert, 2026-11-09)
 
-These are the sites the real photos have come from so far. Robert is
-ranking them — do not assume an order until he gives it. Reversible
-and Vestiaire Collective show up most often.
+When a search surfaces several of these sites, use them in this order.
+If one of these sites comes up, prioritize it over other sites.
 
-- Reversible (reversible.com)
-- Vestiaire Collective (vestiairecollective.com)
-- Grailed (grailed.com)
-- Editorialist (editorialist.com)
-- Saks Fifth Avenue (saksfifthavenue.com)
-- StockX (stockx.com)
-- Kering DAM — Balenciaga official photo library
-  (balenciaga.dam.kering.com)
-- MR PORTER (mrporter.com) — photos came through Reversible listings
-  whose details are "provided by MR PORTER", not directly.
+1. Reversible (reversible.com)
+2. Vestiaire Collective (vestiairecollective.com)
+3. Grailed (grailed.com)
+4. Editorialist (editorialist.com)
+5. Saks Fifth Avenue (saksfifthavenue.com)
+6. StockX (stockx.com)
+
+Still usable, below the priority list: Kering DAM — Balenciaga official
+photo library (balenciaga.dam.kering.com); MR PORTER (mrporter.com) —
+photos came through Reversible listings whose details are "provided by
+MR PORTER", not directly.
 
 Also seen in search results but not used for a photo yet: Farfetch,
 Bergdorf Goodman, Cettire, Lyst. eBay and Mercari were in the original
@@ -337,10 +338,12 @@ Update all three files, then commit them together:
 ## The rules, in one place (do not break these)
 
 1. **Authentic photos only.** DHGate/seller images are leads, never
-   the saved image. Reverse image search first, then StockX, eBay,
-   Mercari, Grailed, retailer sites. The real image does not have to
-   come from the brand's own website — but the full brand name must
-   be visible and unedited.
+   the saved image. Reverse image search first, then the priority
+   sites in order (Reversible, Vestiaire Collective, Grailed,
+   Editorialist, Saks Fifth Avenue, StockX), then other retailer /
+   listing sites. The real image does not have to come from the
+   brand's own website — but the full brand name must be visible and
+   unedited.
 2. **Two names, never mixed.** Source label (folder/file names) is
    for ordering; real product name is what customers see. The
    public-facing name must match the photo.
@@ -383,9 +386,10 @@ Update all three files, then commit them together:
 - **Links per item: confirmed 2026-11-09** — as long as every item has
   its links in the tracker sheet (columns F and N), the repo stays
   link-free. No change.
-- **Photo-source priority ranking: pending** — Robert is ranking
-  Reversible, Vestiaire Collective, Grailed, Editorialist, Saks,
-  StockX, Kering DAM, MR PORTER (see Step 2).
+- **Photo-source priority: set 2026-11-09** — Reversible >
+  Vestiaire Collective > Grailed > Editorialist > Saks Fifth Avenue >
+  StockX. If one of these sites comes up, prioritize it over other
+  sites (see Step 2).
 - Source list: 14 entries.
 - Work queue: "Designer Catalog - Sourcing Queue" sheet, created
   2026-11-08 — Robert adds rows by voice; the agent works the oldest

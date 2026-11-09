@@ -192,9 +192,11 @@ Folder rules:
   photo (crop the top "hot selling" header and the bottom words off).
 - **Authentic photos only, in general:** DHGate/seller images are leads,
   not catalog images — find the real, unedited photo showing the full brand
-  name (reverse image search first, then StockX, eBay, Mercari, Grailed,
-  retailer sites). Exception: when Robert explicitly says to save the
-  screenshots he sent (cropped), save those as instructed.
+  name (reverse image search first, then the priority sites in order:
+  Reversible, Vestiaire Collective, Grailed, Editorialist, Saks Fifth
+  Avenue, StockX, then other retailer sites). Exception: when Robert
+  explicitly says to save the screenshots he sent (cropped), save those
+  as instructed.
 - Product-only images. Never whole webpages, listing UI, or review text.
 
 ## Current items
