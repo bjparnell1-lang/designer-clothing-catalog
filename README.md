@@ -80,6 +80,16 @@ so the white circle is selected and a small black circle sits next to it
 unselected; clicking the black circle swaps the listing's photo to the
 black one, still on the listings page.
 
+**The circle must match the garment.** The color of each circle comes
+from the garment itself — look at the photo and use AI to read the
+overall / dominant color of the hoodie, then fill the circle with that
+color so it matches as closely as possible. Do not use a generic color
+from the name alone (a "white" hoodie that photographs cream gets a
+cream circle, not pure white). Record the swatch color with the item —
+in the tracker notes and the catalog notes, next to the public color —
+as a hex value when possible, otherwise the closest named color, so the
+site builder fills the circle with it.
+
 ## Store names — how ordering works (read this first)
 
 **The folder directly under each brand folder IS the store name.**

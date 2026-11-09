@@ -263,6 +263,15 @@ and clicking a circle swaps the color shown on the listing card. Robert
 may group items this way again — apply the same rule whenever he says
 two items are the same product in different colors.
 
+**The swatch circle must match the garment.** For each color variant,
+look at the photo and use AI vision to read the garment's overall /
+dominant color, then record it as the item's swatch color (a hex value
+when possible, otherwise the closest named color) in the tracker notes
+and the catalog notes, next to the public color. The circle on the
+listing is filled with that swatch color — never a generic color from
+the name alone. A hoodie that photographs cream gets a cream circle,
+not pure white.
+
 ## Step 4 — File it in Drive
 
 Structure: `designer clothing` → `<category>` → `<brand>` →
@@ -395,6 +404,12 @@ Update all three files, then commit them together:
     Group them; tell them apart by public-facing color. The listing
     shows color circles on the card itself — clicking a circle swaps
     the shown color without opening the listing.
+12. **Swatch circles match the garment (2026-11-09).** Read the
+    garment's overall / dominant color from the photo with AI vision;
+    the circle is filled with that color, as closely as possible —
+    never a generic color from the name alone. Record the swatch color
+    (hex when possible) in the tracker and catalog notes, next to the
+    public color.
 
 ## Current state (2026-11-08)
 
