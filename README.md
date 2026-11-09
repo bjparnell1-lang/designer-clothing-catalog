@@ -90,6 +90,15 @@ in the tracker notes and the catalog notes, next to the public color —
 as a hex value when possible, otherwise the closest named color, so the
 site builder fills the circle with it.
 
+**The cart must remember the exact variant.** When a shopper adds a
+color to the cart, the order must carry that specific color's backend
+record — its source label, store, DHGate source link, and numbering —
+so Robert knows exactly which one to order. The public color alone is
+not enough: black added to the cart must resolve to the black variant's
+source (e.g. 12/100 from damai2023), never to the listing's default
+variant. Each color variant keeps its own backend record; the cart
+passes the selected variant's record through to the order.
+
 ## Store names — how ordering works (read this first)
 
 **The folder directly under each brand folder IS the store name.**

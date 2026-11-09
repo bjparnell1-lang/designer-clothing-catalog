@@ -263,6 +263,14 @@ and clicking a circle swaps the color shown on the listing card. Robert
 may group items this way again — apply the same rule whenever he says
 two items are the same product in different colors.
 
+**The cart must remember the exact variant.** When a shopper adds a
+color to the cart, the order must carry that color's backend record —
+source label, store, DHGate source link, and numbering — so Robert
+knows exactly which one to order. The public color alone is not enough.
+Each color variant keeps its own backend record in the tracker and the
+catalog; the site builder must pass the selected variant's record
+through to the order, never the listing's default variant.
+
 **The swatch circle must match the garment.** For each color variant,
 look at the photo and use AI vision to read the garment's overall /
 dominant color, then record it as the item's swatch color (a hex value
@@ -410,6 +418,11 @@ Update all three files, then commit them together:
     never a generic color from the name alone. Record the swatch color
     (hex when possible) in the tracker and catalog notes, next to the
     public color.
+13. **The cart carries the variant's backend record (2026-11-09).**
+    When a color is added to the cart, the order carries that
+    variant's source label, store, source link, and numbering — so
+    Robert knows exactly which one to order. Never substitute the
+    listing's default variant.
 
 ## Current state (2026-11-08)
 
