@@ -177,6 +177,9 @@ Summary (2026-11-08):
 | Olive 40/100 | damai2023 | TBD — Balenciaga stencil logo hoodie (BALENC AGA) | Done — front + back in Drive; real name still needed |
 | LightPink 41/100 | damai2023 | Balenciaga Tape Type Hoodie Oversized, Faded Black | Done — all 6 photos in Drive |
 | Black 11/100 | damai2023 | Balenciaga Racing Logo Print Long Sleeve Hoodie | Link found (Reversible) — photos pending |
+| Black 11/81 | xiaobaie | Balenciaga Crypto Logo-Print Bleached Cotton-Jersey Hoodie | Done — front, on-model front, detail in Drive |
+| Pink 13/81 | xiaobaie | Balenciaga Logo Hoodie (white — black logo, red balenciaga text) — working title, real name TBD | Done — front + detail in Drive; real name still needed |
+| Black 10/29 | hzqsq901208 | Balenciaga BB Logo Crewneck Sweatshirt — working title, real name TBD | Done — front photo only in Drive; no back photo; real name still needed |
 | casualyn (53 files) | casualyn | 15 Balenciaga designs, real names in REPLACEMENTS log | DELETED 2026-11-08 — all 53 photos trashed (DHGate-sourced, incl. the 15 real replacements; restorable from trash) |
 | museround27 (6 files) | museround27 | Louis Vuitton monogram crewneck sweatshirts | DELETED 2026-11-08 — all 6 cropped DHGate screenshots trashed |
 | Sneakers, DHGate 1085634430 | TBD | Balenciaga Track trainers | Blocked — DHGate page unreadable (see below) |
@@ -200,6 +203,7 @@ Notes:
   page (store name + color options).
 - **Black 11/100:** link found — Reversible listing 583629410, brand new, size JP 1. Photos still pending: Reversible blocks direct reads (Cloudflare) and the browser could not load the page. Needs the first 2 photos as screenshots, or the link opened in the live browser.
 - **Olive 40/100 real name:** not yet identified.
+- **Black 10/29 real name:** working title only (Balenciaga BB Logo Crewneck Sweatshirt), not verified against a retailer listing. Front photo only — no back photo was provided.
 
 ## How to add a new item
 

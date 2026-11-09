@@ -6,7 +6,7 @@
    "date_added": "2026-11-08",
    "drive_folder": "designer clothing/hoodies/Balenciaga/damai2023/Green 12/100",
    "drive_folder_id": "18kQrx7l9v3n4_TJCOYCsxfTE-5smZl7v",
-   "notes": "First 2 carousel photos (front + back) from Grailed. Listing color trait is black; filed under 'Green' per source label. Second source: Vestiaire Collective 71528379 ($597, Black cotton, size 38, never worn with tag) \u2014 same black Top League hoodie; its first 2 photos are both fronts.",
+   "notes": "First 2 carousel photos (front + back) from Grailed. Listing color trait is black; filed under 'Green' per source label. Second source: Vestiaire Collective 71528379 ($597, Black cotton, size 38, never worn with tag) — same black Top League hoodie; its first 2 photos are both fronts.",
    "photo_files": [
     "green-12-100-front.jpg",
     "green-12-100-back.jpg",
@@ -113,7 +113,7 @@
    "source_label": "casualyn set (53 files)",
    "source_link": "https://m.dhgate.com/product/bb-men-sweatshirts-women-embroidery-hooded/1119231452.html",
    "source_type": "DHGate item 1119231452",
-   "status": "deleted 2026-11-08 \u2014 all 53 photos trashed (DHGate-sourced)",
+   "status": "deleted 2026-11-08 — all 53 photos trashed (DHGate-sourced)",
    "store": "casualyn",
    "source_color_name": "",
    "color_identifier": "",
@@ -134,7 +134,7 @@
    "source_label": "museround27 set (6 files)",
    "source_link": "",
    "source_type": "Screenshots sent directly by Robert (DHGate store page + color shots)",
-   "status": "deleted 2026-11-08 \u2014 all 6 photos trashed (DHGate screenshots)",
+   "status": "deleted 2026-11-08 — all 6 photos trashed (DHGate screenshots)",
    "store": "museround27",
    "source_color_name": "",
    "color_identifier": "",
@@ -214,7 +214,7 @@
    "store": "xiaobaie",
    "category": "Hoodies",
    "brand": "Balenciaga",
-   "public_name": "Balenciaga Logo Hoodie (white \u2014 black logo, red balenciaga text) \u2014 working title, real name TBD",
+   "public_name": "Balenciaga Logo Hoodie (white — black logo, red balenciaga text) — working title, real name TBD",
    "public_color": "White",
    "source_link": "https://sale.dhgate.com/eoVHEb75",
    "photo_reference_link": "",
@@ -225,8 +225,31 @@
    ],
    "retail_price_usd": null,
    "date_added": "2026-11-08",
-   "status": "photos done \u2014 name/price TBD",
-   "notes": "Photos supplied directly as screenshots 3+4 (no photo link). 6/10 badge cropped off the detail shot. Real product name + retail price not verified \u2014 no retailer listing found. DHGate price $62.12 (1 pc). Garment looks white; DHGate color name is Pink."
+   "status": "photos done — name/price TBD",
+   "notes": "Photos supplied directly as screenshots 3+4 (no photo link). 6/10 badge cropped off the detail shot. Real product name + retail price not verified — no retailer listing found. DHGate price $62.12 (1 pc). Garment looks white; DHGate color name is Pink."
+  },
+  {
+   "source_label": "Black 10/29",
+   "source_color_name": "Black 10/29",
+   "color_identifier": "Black",
+   "numbering": "10/29",
+   "store": "hzqsq901208",
+   "category": "Hoodies",
+   "brand": "Balenciaga",
+   "public_name": "Balenciaga BB Logo Crewneck Sweatshirt — working title, real name TBD",
+   "public_color": "Black",
+   "source_link": "https://sale.dhgate.com/hCaTAf63",
+   "photo_reference_link": "",
+   "drive_folder": "hoodies > Balenciaga > hzqsq901208 > Black 10/29",
+   "drive_folder_id": "1KvimM2a7FZq7lFBuj0poCMOwAN4ymfVz",
+   "photo_files": [
+    "black-10-29-front.jpg"
+   ],
+   "retail_price_usd": null,
+   "date_added": "2026-11-08",
+   "status": "photos done — name TBD (front only, no back photo)",
+   "notes": "DHGate item 1068734596, 'Designer Hoodie for Men and Women - Loose Fit Lattice Pullover Sweatshirt', 29 options, 4.8 stars, 1.2K+ sold. DHGate color name is 'Colour 8' (option 10 of 29 — label uses position). Real photo supplied directly by Robert (4th attachment) — full 'BALENCIAGA' name, no reverse search needed. Front view only; no back photo provided. Store 99.0% positive, 66,104 orders, 3rd Year Recommended Supplier. DHGate 1-pc ordering cost $20.50.",
+   "source_type": "DHGate share link hCaTAf63 (item 1068734596); real photo sent directly by Robert"
   }
  ],
  "meta": {
@@ -247,7 +270,7 @@
   "github_user": "bjparnell1-lang",
   "last_updated": "2026-11-08",
   "owner": "Robert Anthony Parnell",
-  "project": "Designer Clothing Catalog \u2014 Website Handoff",
+  "project": "Designer Clothing Catalog — Website Handoff",
   "tracker_sheet": {
    "id": "14H5m_eVRyKjVrhe17sye2qA8EvGP5c17muO5HEvh9gA",
    "name": "Designer Catalog - Product Cross-Reference",
@@ -263,14 +286,14 @@
    "sneakers": "Up to 3 pics per color from reverse image search; first online source's other views first; 2 if 3 cannot be found, 1 if 2 cannot be found; cropped DHGate photo only as a last resort."
   },
   "public_facing_name": "The real product name (the 'public_name' field here, and the tracker sheet's 'Real product name' column). This is the name the website shows customers. It must match the photo.",
-  "store_folder": "The folder directly under each brand folder IS the store name \u2014 the supplier (usually DHGate) store the item is ordered from (e.g. damai2023, casualyn, museround27). The 'store' field on every item repeats it. When an order comes in, use store + source_label + source_link together to find the exact listing to order from. If store is TBD, the store is not known yet and the order cannot be placed until it is found.",
-  "source_color_name": "The color name the supplier store uses for the item (e.g. 'Green 12/100'). This is the name to use when ordering \u2014 it often does NOT describe the garment's real color (the 'Green 12/100' garment is black). Record it exactly as the store shows it, next to the real color, so the two are never confused.",
+  "store_folder": "The folder directly under each brand folder IS the store name — the supplier (usually DHGate) store the item is ordered from (e.g. damai2023, casualyn, museround27). The 'store' field on every item repeats it. When an order comes in, use store + source_label + source_link together to find the exact listing to order from. If store is TBD, the store is not known yet and the order cannot be placed until it is found.",
+  "source_color_name": "The color name the supplier store uses for the item (e.g. 'Green 12/100'). This is the name to use when ordering — it often does NOT describe the garment's real color (the 'Green 12/100' garment is black). Record it exactly as the store shows it, next to the real color, so the two are never confused.",
   "ordering": "An order needs three things together: store name + source label + source link, where source link is the DHGate listing. The public-facing name is for customers only, never for ordering. The photo reference link is never part of an order.",
-  "color_identifier": "The color word from the source label, on its own (e.g. 'LightPink', 'Green', 'Black'). This is the color name the supplier store uses for the item \u2014 it often does NOT describe the garment's real color. Use it with the numbering to identify the exact store variant.",
+  "color_identifier": "The color word from the source label, on its own (e.g. 'LightPink', 'Green', 'Black'). This is the color name the supplier store uses for the item — it often does NOT describe the garment's real color. Use it with the numbering to identify the exact store variant.",
   "numbering": "The item's number within the store's listing, written as N/100 (e.g. '41/100' means item 41 out of 100). It is the second half of the source label: 'LightPink 41/100' splits into color identifier 'LightPink' + numbering '41/100'. Record it exactly as shown; if a listing has no numbering, leave it blank.",
   "per_item_record": "Every product carries: store name, source link (DHGate ordering link, when available), color identifier, and numbering (when available). The photo reference link is a separate fifth field and is never an ordering source. Together with the source label they identify the exact store variant to order.",
-  "source_link": "The ordering link ONLY: the DHGate listing (or YUPOO category for the Purple Brand drop) where the item is bought. Never a Grailed, Vestiaire, Editorialist, Saks, StockX, or Reversible link \u2014 those are photo references, not sources. Empty means the DHGate ordering link has not been provided yet.",
-  "photo_reference_link": "Where the real, unedited photo was found (Grailed, Vestiaire Collective, Editorialist, Saks, StockX, Reversible, Kering DAM, etc.). This link exists ONLY to show where the public-facing photo came from \u2014 it is NOT a source and must NEVER be used to order. The photo itself is the product image customers see; the link is provenance only.",
-  "retail_price": "Leave retail_price_usd EMPTY unless the user provides the price himself. NEVER take the price from a photo-reference link (Grailed, Vestiaire, Editorialist, Reversible, Saks, StockX, MR PORTER, etc.) \u2014 the price on those pages is irrelevant. The user will give prices later."
+  "source_link": "The ordering link ONLY: the DHGate listing (or YUPOO category for the Purple Brand drop) where the item is bought. Never a Grailed, Vestiaire, Editorialist, Saks, StockX, or Reversible link — those are photo references, not sources. Empty means the DHGate ordering link has not been provided yet.",
+  "photo_reference_link": "Where the real, unedited photo was found (Grailed, Vestiaire Collective, Editorialist, Saks, StockX, Reversible, Kering DAM, etc.). This link exists ONLY to show where the public-facing photo came from — it is NOT a source and must NEVER be used to order. The photo itself is the product image customers see; the link is provenance only.",
+  "retail_price": "Leave retail_price_usd EMPTY unless the user provides the price himself. NEVER take the price from a photo-reference link (Grailed, Vestiaire, Editorialist, Reversible, Saks, StockX, MR PORTER, etc.) — the price on those pages is irrelevant. The user will give prices later."
  }
 }
