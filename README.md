@@ -106,6 +106,11 @@ numbering — so he orders the exact source item. Example: a customer
 orders public Black, and the order gives Robert source Gold 7/100 (the
 garment is black; the store calls it Gold).
 
+**The public-facing color is what the AI detects from the garment in
+the photo — never the store's color name.** That is how the 7/100
+example works: the store calls it Gold, but the garment is black, so
+the public color is Black.
+
 ## Store names — how ordering works (read this first)
 
 **The folder directly under each brand folder IS the store name.**

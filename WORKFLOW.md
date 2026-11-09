@@ -240,7 +240,10 @@ the `6/10` badge was cropped off Pink 13/81's detail shot).
 
 From the photo's source listing (the photo reference link), take the
 **real product name** (the retailer's title) and the **real color**
-(what the garment actually is). If no retailer listing can be found,
+(what the garment actually is). The real color is what the AI detects
+from the garment in the photo — never the store's color name (the store
+called 7/100 "Gold"; the garment is black, so the public color is
+Black). If no retailer listing can be found,
 use a working title (e.g. "Balenciaga BB Logo Crewneck Sweatshirt —
 working title, real name TBD") and mark the status accordingly — never
 invent a real name.
