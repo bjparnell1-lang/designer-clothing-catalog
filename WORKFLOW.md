@@ -422,7 +422,9 @@ Update all three files, then commit them together:
     When a color is added to the cart, the order carries that
     variant's source label, store, source link, and numbering — so
     Robert knows exactly which one to order. Never substitute the
-    listing's default variant.
+    listing's default variant. The order must also translate the
+    public-facing color back into the source color: a customer orders
+    public Gold, the order gives Robert source 7/100.
 
 ## Current state (2026-11-08)
 

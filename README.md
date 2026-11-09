@@ -99,6 +99,12 @@ source (e.g. 12/100 from damai2023), never to the listing's default
 variant. Each color variant keeps its own backend record; the cart
 passes the selected variant's record through to the order.
 
+**The order translates the public color back into the source color.**
+When a customer orders by the public-facing color, the order must show
+Robert the source color for that variant — the source label and
+numbering — so he orders the exact source item. Example: a customer
+orders public Gold, and the order gives Robert source 7/100.
+
 ## Store names — how ordering works (read this first)
 
 **The folder directly under each brand folder IS the store name.**
