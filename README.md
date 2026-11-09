@@ -8,6 +8,12 @@ which name to use when an order needs to be placed with the supplier.
 Owner: Robert Anthony Parnell. GitHub: `bjparnell1-lang`.
 Last updated: 2026-11-08.
 
+**Agent handoff:** the step-by-step playbook for the agent doing the
+sourcing and filing (reverse image search, reading store/label/
+numbering from Robert's drops, Drive + tracker + catalog updates) is
+in [`WORKFLOW.md`](WORKFLOW.md). The website builder reads this
+README; the sourcing agent follows WORKFLOW.md.
+
 ## Where everything lives
 
 - **Google Drive root:** `designer clothing`
@@ -124,14 +130,19 @@ names, and the `museround27` files use `color1`–`color7`.)
 designer clothing/
 ├── hoodies/                                  (ID 1VF9SrirUMgwGutQZmnR5jwgnjpyowNUv)
 │   ├── Balenciaga/                           (ID 1oekTNZ4pi3Ob74TH7w10Mf05ZAeff56r)
-│   │   ├── casualyn/                         (STORE — DHGate store; item 1119231452)
-│   │   └── damai2023/                        (STORE — DHGate store; ID 1I7cWey4y-7fTWWR-tCgSdwFSX9tZZe0G)
-│   │       ├── Green 12/100/
-│   │       ├── Olive 40/100/
-│   │       ├── LightPink 41/100/
-│   │       └── Black 11/100/                 (pending — link missing)
+│   │   ├── casualyn/                         (STORE — DHGate store; item 1119231452; DELETED 2026-11-08, folder empty)
+│   │   ├── damai2023/                        (STORE — DHGate store; ID 1I7cWey4y-7fTWWR-tCgSdwFSX9tZZe0G)
+│   │   │   ├── Green 12/100/
+│   │   │   ├── Olive 40/100/
+│   │   │   ├── LightPink 41/100/
+│   │   │   └── Black 11/100/                 (pending — photos missing)
+│   │   ├── xiaobaie/                         (STORE — DHGate store; ID 1NGEJnjzkksx80zJ7fRd1ihSZ6KWa79mg)
+│   │   │   ├── Black 11/81/
+│   │   │   └── Pink 13/81/
+│   │   └── hzqsq901208/                     (STORE — DHGate store; ID 1vICJs1eaF9A6M1VVLp5Gm0gpcuzdfToo)
+│   │       └── Black 10/29/
 │   └── Louis Vuitton/                       (ID 1vZiT9efdXISdIkIC1wdbRaNZVHBBmS5E)
-│       └── museround27/                      (STORE; ID 1k9rBCOabFhXurNWa4OXGgOaLShixMFDw)
+│       └── museround27/                      (STORE; ID 1k9rBCOabFhXurNWa4OXGgOaLShixMFDw; DELETED 2026-11-08, folder empty)
 ├── jeans/
 │   └── Purple Brand/                         (YUPOO drop — PAUSED, see below)
 ├── outerwear/
@@ -143,7 +154,11 @@ Folder rules:
 
 - Category first, then brand, then store, then one subfolder per color,
   named by the color label (e.g. `Green 12/100`).
-- Store for the current batch is `damai2023` unless Robert says different.
+- Store comes from Robert's screenshots with each drop — read it
+  from the pics (damai2023 was the batch store for the 2026-11-08
+  hoodies; newer drops use xiaobaie, hzqsq901208, and whatever store
+  the next screenshots show). If no different store is given, it is
+  the same store as the previous item.
 - Photo files inside a color folder are named
   `<label>-front.jpg`, `<label>-back.jpg` (and `-detail`, `-model-front`,
   etc. when more views exist), where `<label>` is the source label
@@ -206,6 +221,9 @@ Notes:
 - **Black 10/29 real name:** working title only (Balenciaga BB Logo Crewneck Sweatshirt), not verified against a retailer listing. Front photo only — no back photo was provided.
 
 ## How to add a new item
+
+The full agent playbook is in [`WORKFLOW.md`](WORKFLOW.md) — follow
+it step by step. Short version:
 
 1. Robert sends a link (or photos) plus a source label like `Color N/100`.
 2. Save the photos to Drive under
