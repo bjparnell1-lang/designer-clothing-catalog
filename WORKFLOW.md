@@ -305,6 +305,13 @@ label, e.g. `Black 10/29` — Drive accepts `/` in the name).
   brand; hoodies go in `hoodies`.** A crewneck with no hood is a
   sweatshirt, not a hoodie. Under the category folder the structure is
   the same: brand → store → products (one subfolder per color label).
+- **The AI detects the garment type from the photo** — hoodie,
+  sweatshirt, or long-sleeve t-shirt — and that decides the category.
+  A hood means hoodie; a crewneck with no hood is a sweatshirt; a
+  lighter, thinner long-sleeve without a hood is a long-sleeve
+  t-shirt. The category in the queue or tracker is only a starting
+  guess — if the AI's detection differs, file it under the detected
+  category and update the sheet.
 - Brand folders: Balenciaga under hoodies and under sweatshirts; Louis
   Vuitton under hoodies; Purple Brand under jeans.
 - Store folders (under Balenciaga unless noted): damai2023,
@@ -442,6 +449,15 @@ Update all three files, then commit them together:
     public color, photo) AND what is source-facing (source label,
     store, source link, numbering) — so he knows what they see and
     what to order.
+14. **The AI detects the garment type (2026-11-09).** The AI looks at
+    the photo and detects whether the garment is a hoodie, a
+    sweatshirt, or a long-sleeve t-shirt — and that decides the
+    category on the website, so it is categorized correctly. A hood
+    means hoodie; a crewneck with no hood is a sweatshirt; a lighter,
+    thinner long-sleeve without a hood is a long-sleeve t-shirt. The
+    category in the queue or tracker is only a starting guess — if the
+    AI's detection differs, file it under the detected category and
+    update the sheet.
 
 ## Current state (2026-11-08)
 

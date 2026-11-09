@@ -234,6 +234,12 @@ Folder rules:
 - Sweatshirts go in their own `sweatshirts` folder under the right
   brand; hoodies go in `hoodies`. A crewneck with no hood is a
   sweatshirt, not a hoodie.
+- The AI detects the garment type from the photo — hoodie, sweatshirt,
+  or long-sleeve t-shirt — and that decides the category on the
+  website. A hood means hoodie; a crewneck with no hood is a
+  sweatshirt; a lighter long-sleeve without a hood is a long-sleeve
+  t-shirt. The category in the sheet is only a starting guess — update
+  it if the AI's detection differs.
 - File names can be different versions of the file name so they do not
   duplicate each other; the folder name must be the closest match — the
   exact color identifier + numbering label.
