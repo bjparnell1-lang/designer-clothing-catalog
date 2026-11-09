@@ -251,6 +251,18 @@ ONLY when Robert provides them himself — he will tell you later. The
 DHGate ordering cost (e.g. $20.50, $62.12) may be noted in the notes
 field; it is an ordering cost, not a retail price.
 
+**Same item, different colors = one website listing.** When two items
+are the same real product in different colors (different source
+numberings, e.g. 11/100 and 12/100), they are ONE listing on the
+website, told apart by public-facing color — not two listings. Record
+each item's public color (Robert gives it, e.g. 11 = white, 12 = black)
+in the tracker / catalog notes. The website shows small color circles
+on the listing itself (see README.md "Listings — one item, several
+colors"): the shopper sees the other colors without opening the listing,
+and clicking a circle swaps the color shown on the listing card. Robert
+may group items this way again — apply the same rule whenever he says
+two items are the same product in different colors.
+
 ## Step 4 — File it in Drive
 
 Structure: `designer clothing` → `<category>` → `<brand>` →
@@ -379,6 +391,10 @@ Update all three files, then commit them together:
     2026-11-09).** File names can be different versions of the file
     name so they do not duplicate; the folder name must be the closest
     match — the exact color identifier + numbering label.
+11. **Same item, different colors = one listing (2026-11-09).**
+    Group them; tell them apart by public-facing color. The listing
+    shows color circles on the card itself — clicking a circle swaps
+    the shown color without opening the listing.
 
 ## Current state (2026-11-08)
 

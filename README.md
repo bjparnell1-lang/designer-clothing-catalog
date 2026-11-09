@@ -57,6 +57,29 @@ word often does NOT describe the garment — the `Green 12/100` garment is
 black. The source color name is the name to use when ordering; the real
 color is the name customers see. Never confuse the two.
 
+## Listings — one item, several colors
+
+When the same real product comes in different colors, it is ONE listing
+on the website — not one listing per color. The items are different
+numbers on the source side (different DHGate option numbers, e.g. 11/100
+and 12/100), but they are the same item, so the website shows them as a
+single listing and tells them apart by public-facing color (e.g. 11 =
+white, 12 = black). Robert may do this again — whenever two items are
+the same product in different colors, group them into one listing the
+same way.
+
+**Color swatches on the listing itself.** A person looking at the
+listings must be able to see that other colors are available WITHOUT
+opening the listing. Each listing shows small color circles (swatches) —
+one per available color. The circle for the color currently shown is
+selected; the other circles are small and unselected. Clicking a circle
+changes the color shown right there on the listing — the listing card /
+grid tile itself — so the shopper sees that color's photo without having
+to click into the listing at all. Example: the listing is showing white,
+so the white circle is selected and a small black circle sits next to it
+unselected; clicking the black circle swaps the listing's photo to the
+black one, still on the listings page.
+
 ## Store names — how ordering works (read this first)
 
 **The folder directly under each brand folder IS the store name.**
