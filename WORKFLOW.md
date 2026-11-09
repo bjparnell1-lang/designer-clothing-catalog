@@ -27,10 +27,13 @@ told in chat; check the sheet.
 - **How to work it:**
   1. Take the oldest row with Status = "Queued". Change it to
      "In progress" before you start.
-  2. Work it exactly per Steps 1–6 below. Store + numbering + color
-     identifier are given. The DHGate link is given when known —
-     blank means it is the same as the previous item from that store.
-     The photo reference link is given when Robert has one.
+  2. Work it exactly per Steps 1–6 below. Store + numbering are
+     given. The color identifier is given when Robert knows it — if
+     it is blank, derive it from DHGate (Step 1 verification: match
+     the numbering, click a size, the color shows) and fill it in.
+     The DHGate link is given when known — blank means it is the
+     same as the previous item from that store. The photo reference
+     link is given when Robert has one.
   3. When it is filed everywhere (Drive photos + tracker row +
      catalog entries), set Status = "Done" and fill in "Agent
      result" with the Drive folder path and the photo file names.
@@ -130,6 +133,10 @@ know you have the right one:
 3. If that color matches the color you are working on, you can be sure
    it is the correct product and the correct picture. That is the
    confirmation — do not skip it.
+   **If the color identifier was not given** (queue row blank — Robert
+   only gave store + numbering to go fast), this is also how you find
+   it: the color that shows after you click a size IS the color
+   identifier. Record it in the tracker and the catalog.
 4. If the numbering and the color do not line up, stop and flag it to
    Robert — do not guess.
 
