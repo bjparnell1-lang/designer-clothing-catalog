@@ -4,7 +4,7 @@ This file is the operating manual for the agent who takes over this
 catalog from here. It tells you exactly what Robert sends, what to do
 with it, and how to file it — so the work comes out the same way it did
 before. The website builder reads `README.md`; this file is for the
-agent doing the sourcing and filing. Last updated: 2026-11-08.
+agent doing the sourcing and filing. Last updated: 2026-11-09.
 
 Architecture: this repo holds instructions and status only. All links
 and IDs live in Google Workspace (Drive folders and Sheets) — never
@@ -74,10 +74,13 @@ position in the order he attached them (left to right as he sees them).
 You receive them in the same left-to-right order. Example: "the photos
 I want you to use is 3 and 4" means the 3rd and 4th attachments.
 
-**Photo count per item is his call each time.** The damai2023 default
-was the first 2 carousel photos (front + back); he overrode it per item
+**Photo count per item (global rule, set 2026-11-09): 3 photos per
+product at least** — front, back, and one more angle. If a source has
+different angles of the garment, include them only if they are not
+redundant or repetitive. If you cannot get 3 photos, 2 is fine. If you
+cannot get 2, 1 is fine. His per-item instruction overrides this
 ("use all photos" for LightPink 41/100, "use the first 3 photos" for
-Black 11/81). If he does not say, use the first 2.
+Black 11/81).
 
 ## Step 1 — Read the drop: store, color, numbering
 
@@ -111,6 +114,25 @@ Robert in your reply** so he can correct you. When he confirms, record
 the reason (like the 2-place lag above) in the tracker notes, the
 catalog notes, and this file, so it sticks.
 
+### Verify the product on DHGate before you search for the photo
+
+Use the DHGate link (from the queue row or the tracker sheet) to open
+the store and find the product. Do this for every item — it is how you
+know you have the right one:
+
+1. Use the numbering for the product you are working on (e.g. `10/29`)
+   and compare it with the numbering shown at the bottom of the picture
+   on DHGate (the option thumbnails show the number). Find the one
+   where the numbering matches.
+2. When the numbering matches, click on the product — the color should
+   show. If the color does not show, select a size, and the color
+   should come up then.
+3. If that color matches the color you are working on, you can be sure
+   it is the correct product and the correct picture. That is the
+   confirmation — do not skip it.
+4. If the numbering and the color do not line up, stop and flag it to
+   Robert — do not guess.
+
 ## Step 2 — Get the real photo (reverse image search first)
 
 **DHGate alters branding** — a letter or number changed, the name
@@ -130,11 +152,36 @@ Order of search for the real, unedited photo:
 3. The photo link Robert posted, if he posted one.
 
 The real photo must show the **full brand name, unedited** — never a
-version with the name blocked out or edited out. Product-only images:
-never whole webpages, listing UI, review text, or add-to-cart elements.
-Include the **back view** when the listing shows one (t-shirts,
-hoodies); skip it when it doesn't make sense (socks). If Robert sent
-the real photo himself, use it as-is after a visual check.
+version with the name blocked out or edited out, and never a version
+where a letter has been changed or the brand made to look different
+(e.g. "balen" instead of "Balenciaga"). Search for that same exact
+design until you find the real, unedited version — front and back.
+Product-only images: never whole webpages, listing UI, review text, or
+add-to-cart elements. Include the **back view** when the listing shows
+one (t-shirts, hoodies); skip it when it doesn't make sense (socks).
+If Robert sent the real photo himself, use it as-is after a visual
+check.
+
+### Photo sources used so far — priority order pending
+
+These are the sites the real photos have come from so far. Robert is
+ranking them — do not assume an order until he gives it. Reversible
+and Vestiaire Collective show up most often.
+
+- Reversible (reversible.com)
+- Vestiaire Collective (vestiairecollective.com)
+- Grailed (grailed.com)
+- Editorialist (editorialist.com)
+- Saks Fifth Avenue (saksfifthavenue.com)
+- StockX (stockx.com)
+- Kering DAM — Balenciaga official photo library
+  (balenciaga.dam.kering.com)
+- MR PORTER (mrporter.com) — photos came through Reversible listings
+  whose details are "provided by MR PORTER", not directly.
+
+Also seen in search results but not used for a photo yet: Farfetch,
+Bergdorf Goodman, Cettire, Lyst. eBay and Mercari were in the original
+search order but have not been used for this catalog.
 
 **Verify every photo visually before filing it** — open it and look:
 front/back as labeled, full branding, no UI, no gallery badges
@@ -204,18 +251,31 @@ label, e.g. `Black 10/29` — Drive accepts `/` in the name).
 
 - **Drive root:** `designer clothing` — find it by name in Drive.
   (Folder IDs are not kept in this repo; open folders by name.)
-- Category folders: hoodies, tracksuits, outerwear, jeans.
-- Brand folders: Balenciaga under hoodies; Louis Vuitton under
-  hoodies; Purple Brand under jeans.
+- Category folders: hoodies, sweatshirts, tracksuits, outerwear, jeans.
+  **Sweatshirts go in their own `sweatshirts` folder under the right
+  brand; hoodies go in `hoodies`.** A crewneck with no hood is a
+  sweatshirt, not a hoodie. Under the category folder the structure is
+  the same: brand → store → products (one subfolder per color label).
+- Brand folders: Balenciaga under hoodies and under sweatshirts; Louis
+  Vuitton under hoodies; Purple Brand under jeans.
 - Store folders (under Balenciaga unless noted): damai2023,
   xiaobaie, hzqsq901208; museround27 under Louis Vuitton (empty —
-  photos deleted, see below). Create a store folder when a new store
+  photos deleted, see below). `hzqsq901208` also has a folder under
+  `sweatshirts > Balenciaga` (Black 10/29, moved 2026-11-09 — it is a
+  crewneck sweatshirt). Create a store folder when a new store
   appears.
 - Photo files inside a color folder are named
   `<label>-front.jpg`, `<label>-back.jpg` (plus `-detail`,
   `-model.jpg`, etc. when more views exist), where `<label>` is the
   source label lowercased with spaces as hyphens
   (e.g. `black-10-29-front.jpg`).
+- **File names (global rule, set 2026-11-09):** the actual file names
+  can be different versions of the file name so they do not duplicate
+  each other (different suffixes — `-front`, `-back`, `-detail`,
+  `-model-front` — are versions of the same file name). But the
+  **folder must have the closest match** — the folder name is the exact
+  color identifier + numbering label (e.g. `Black 10/29`), never a
+  paraphrase.
 - **Verify after uploading:** list the folder and confirm the files
   are there with the right names. Never report an item as filed until
   the Drive listing confirms it.
@@ -301,12 +361,31 @@ Update all three files, then commit them together:
 8. **When Robert corrects you, record the reason** — in the tracker
    notes, the catalog notes, and this file — so the correction never
    has to be made twice. (Example: the hzqsq901208 2-place lag.)
+9. **Photo count (global rule, 2026-11-09).** 3 photos per product at
+   least; extra angles only if they are not redundant or repetitive;
+   2 if 3 is not possible, 1 if 2 is not possible. Robert's per-item
+   instruction overrides.
+10. **File names may vary; the folder must match (global rule,
+    2026-11-09).** File names can be different versions of the file
+    name so they do not duplicate; the folder name must be the closest
+    match — the exact color identifier + numbering label.
 
 ## Current state (2026-11-08)
 
 - 11 items in `catalog.json` (8 real/done or in-progress, 2 deleted
   sets, 1 paused YUPOO drop, 1 blocked sneakers item).
-- Latest filed item: Black 10/29, hzqsq901208 (tracker row 24).
+- Latest filed item: Black 10/29, hzqsq901208 (tracker row 24) —
+  **moved to the new `sweatshirts` category 2026-11-09** (crewneck,
+  no hood).
+- **Sweatshirts is a new Drive category (2026-11-09).** The website
+  nav does not have a Sweatshirts category yet — flag to Robert / the
+  site builder when it matters.
+- **Links per item: confirmed 2026-11-09** — as long as every item has
+  its links in the tracker sheet (columns F and N), the repo stays
+  link-free. No change.
+- **Photo-source priority ranking: pending** — Robert is ranking
+  Reversible, Vestiaire Collective, Grailed, Editorialist, Saks,
+  StockX, Kering DAM, MR PORTER (see Step 2).
 - Source list: 14 entries.
 - Work queue: "Designer Catalog - Sourcing Queue" sheet, created
   2026-11-08 — Robert adds rows by voice; the agent works the oldest

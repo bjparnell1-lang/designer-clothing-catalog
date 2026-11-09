@@ -144,10 +144,13 @@ designer clothing/
 │   │   ├── xiaobaie/                         (STORE — DHGate store)
 │   │   │   ├── Black 11/81/
 │   │   │   └── Pink 13/81/
-│   │   └── hzqsq901208/                     (STORE — DHGate store)
-│   │       └── Black 10/29/
+│   │   └── hzqsq901208/                     (STORE — DHGate store; empty — Black 10/29 moved to sweatshirts 2026-11-09)
 │   └── Louis Vuitton/
 │       └── museround27/                      (STORE; DELETED 2026-11-08, folder empty)
+├── sweatshirts/
+│   └── Balenciaga/
+│       └── hzqsq901208/                     (STORE — DHGate store)
+│           └── Black 10/29/                (crewneck — moved from hoodies 2026-11-09)
 ├── jeans/
 │   └── Purple Brand/                         (YUPOO drop — PAUSED, see below)
 ├── outerwear/
@@ -159,6 +162,12 @@ Folder rules:
 
 - Category first, then brand, then store, then one subfolder per color,
   named by the color label (e.g. `Green 12/100`).
+- Sweatshirts go in their own `sweatshirts` folder under the right
+  brand; hoodies go in `hoodies`. A crewneck with no hood is a
+  sweatshirt, not a hoodie.
+- File names can be different versions of the file name so they do not
+  duplicate each other; the folder name must be the closest match — the
+  exact color identifier + numbering label.
 - Store comes from Robert's screenshots with each drop — read it
   from the pics (damai2023 was the batch store for the 2026-11-08
   hoodies; newer drops use xiaobaie, hzqsq901208, and whatever store
@@ -171,9 +180,11 @@ Folder rules:
 
 ## Photo rules
 
-- **Hoodies:** use only the first 2 photos in the listing carousel
-  (front + back), unless Robert says otherwise for that item.
-  (LightPink 41/100 was the exception: all 6 photos.)
+- **Hoodies and sweatshirts (global rule, 2026-11-09):** 3 photos per
+  product at least — front, back, and one more angle. Extra angles only
+  if they are not redundant or repetitive. If 3 cannot be found, 2 is
+  fine; if 2 cannot be found, 1 is fine. Robert's per-item instruction
+  overrides (LightPink 41/100: all 6 photos; Black 11/81: first 3).
 - **Sneakers:** up to 3 pics per color, from a reverse image search.
   Check the first source found online for other views of the same listing
   first — it usually has them. If only 2 can be found, use 2; if only 1,
@@ -189,7 +200,7 @@ Folder rules:
 ## Current items
 
 See `catalog.json` / `catalog.csv` and the tracker sheet for the full data.
-Summary (2026-11-08):
+Summary (2026-11-09):
 
 | Source label | Store | Real product name | Status |
 |---|---|---|---|
