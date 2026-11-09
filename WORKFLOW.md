@@ -428,7 +428,11 @@ Update all three files, then commit them together:
     listing's default variant. The order must also translate the
     public-facing color back into the source color: a customer orders
     public Black, the order gives Robert source Gold 7/100 (the
-    garment is black; the store calls it Gold).
+    garment is black; the store calls it Gold). And the order shows
+    Robert both ends: what the customer saw and ordered (public name,
+    public color, photo) AND what is source-facing (source label,
+    store, source link, numbering) — so he knows what they see and
+    what to order.
 
 ## Current state (2026-11-08)
 

@@ -111,6 +111,12 @@ the photo — never the store's color name.** That is how the 7/100
 example works: the store calls it Gold, but the garment is black, so
 the public color is Black.
 
+**The order shows Robert both ends.** When someone orders, the order
+must show Robert what the customer saw and ordered — the public-facing
+name, public color, and photo — AND what is source-facing — the source
+label, store, DHGate source link, and numbering. He gets both sides of
+the same order, so he knows what they see and what to order.
+
 ## Store names — how ordering works (read this first)
 
 **The folder directly under each brand folder IS the store name.**
