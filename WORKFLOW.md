@@ -424,7 +424,8 @@ Update all three files, then commit them together:
     Robert knows exactly which one to order. Never substitute the
     listing's default variant. The order must also translate the
     public-facing color back into the source color: a customer orders
-    public Gold, the order gives Robert source 7/100.
+    public Black, the order gives Robert source Gold 7/100 (the
+    garment is black; the store calls it Gold).
 
 ## Current state (2026-11-08)
 

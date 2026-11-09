@@ -103,7 +103,8 @@ passes the selected variant's record through to the order.
 When a customer orders by the public-facing color, the order must show
 Robert the source color for that variant — the source label and
 numbering — so he orders the exact source item. Example: a customer
-orders public Gold, and the order gives Robert source 7/100.
+orders public Black, and the order gives Robert source Gold 7/100 (the
+garment is black; the store calls it Gold).
 
 ## Store names — how ordering works (read this first)
 
