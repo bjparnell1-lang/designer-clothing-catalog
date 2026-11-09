@@ -222,15 +222,6 @@
   }
  ],
  "meta": {
-  "canva_catalog": {
-   "name": "Designer Clothes Website",
-   "nav_categories": [
-    "Jeans",
-    "Outerwear",
-    "Hoodies",
-    "Tracksuits"
-   ]
-  },
   "drive_root": {
    "name": "designer clothing"
   },

@@ -21,10 +21,10 @@ README; the sourcing agent follows WORKFLOW.md.
 - **Cross-reference tracker (source of truth for names and links):**
   Google Sheet "Designer Catalog - Product Cross-Reference",
   inside the `designer clothing` Drive folder. Open it by name.
-- **Canva catalog (separate, built by another agent):**
-  "Designer Clothes Website", nav categories
-  Jeans, Outerwear, Hoodies, Tracksuits. Keep the Drive structure in sync
-  with it; new folders get mirrored in Canva.
+- **Website (ChatGPT Sites):** the site is built in ChatGPT Sites
+  from this repo. Keep the Drive structure in sync with the site's
+  categories (Jeans, Outerwear, Hoodies, Tracksuits); new folders
+  get mirrored on the site.
 
 This repo holds instructions and status only. All links and IDs live
 in Google Workspace (Drive folders and Sheets) — find things by name;
