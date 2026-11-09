@@ -263,7 +263,9 @@ Folder rules:
   not catalog images — find the real, unedited photo showing the full brand
   name (reverse image search first, then the priority sites in order:
   Reversible, Vestiaire Collective, Grailed, Editorialist, Saks Fifth
-  Avenue, StockX, then other retailer sites). Exception: when Robert
+  Avenue, StockX, then other retailer sites). Always include the brand
+  name in the search (e.g. Balenciaga) so the results are only that
+  brand's pictures. Exception: when Robert
   explicitly says to save the screenshots he sent (cropped), save those
   as instructed.
 - Product-only images. Never whole webpages, listing UI, or review text.

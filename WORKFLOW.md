@@ -159,7 +159,10 @@ the same day — do not re-add DHGate photos there or anywhere).
 Order of search for the real, unedited photo:
 
 1. **Reverse image search first** — the highest priority. If it finds
-   a site with the actual image, use that.
+   a site with the actual image, use that. **Always include the brand
+   name in the search** (e.g. Balenciaga) so the results are only that
+   brand's pictures — a reverse image search without the brand pulls in
+   unrelated lookalikes.
 2. Then the priority sites in order — Reversible, Vestiaire Collective,
    Grailed, Editorialist, Saks Fifth Avenue, StockX — then Kering DAM,
    MR PORTER, eBay, Mercari, and other listing/retailer sites.
