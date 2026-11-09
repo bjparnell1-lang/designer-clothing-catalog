@@ -111,6 +111,15 @@ the photo — never the store's color name.** That is how the 7/100
 example works: the store calls it Gold, but the garment is black, so
 the public color is Black.
 
+**Where to see the examples.** The examples in this section are live
+rows in the Sourcing Queue sheet — open it by name ("Designer Catalog
+- Sourcing Queue", inside the `designer clothing` Drive folder). Q-001
+is the 7/100 item (source Gold, public Black); Q-002 is 11/100 (public
+White); Q-003 is 12/100 (public Black). Q-002 and Q-003 are the same
+item, one listing. Once an item is done, its record moves to the
+tracker sheet ("Designer Catalog - Product Cross-Reference") under its
+source label — look there for finished examples.
+
 **The order shows Robert both ends.** When someone orders, the order
 must show Robert what the customer saw and ordered — the public-facing
 name, public color, and photo — AND what is source-facing — the source

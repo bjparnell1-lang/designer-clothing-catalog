@@ -44,6 +44,12 @@ told in chat; check the sheet.
   the record of FINISHED items. The queue sheet is the record of
   items TO DO. An item moves from the queue to the tracker when it is
   done — it lives in both places, in different states.
+- **Examples in this file:** when a rule names a numbering (7/100,
+  11/100, 12/100), it means these queue rows — Q-001 (7/100,
+  damai2023, source Gold, public Black), Q-002 (11/100, public
+  White), Q-003 (12/100, public Black). Q-002 and Q-003 are the same
+  item, one website listing. Once an item is done, its record is in
+  the tracker sheet under its source label.
 - If you cannot read or write this sheet, say so plainly and work
   from the rows Robert pastes to you instead; do not claim a status
   you did not set.
