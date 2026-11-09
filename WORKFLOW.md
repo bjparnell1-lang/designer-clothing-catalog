@@ -6,6 +6,42 @@ with it, and how to file it — so the work comes out the same way it did
 before. The website builder reads `README.md`; this file is for the
 agent doing the sourcing and filing. Last updated: 2026-11-08.
 
+## Work queue — where your assignments come from
+
+Robert speaks new items to Muse (voice) while away from the app.
+Muse logs each one as a row in the **"Designer Catalog - Sourcing
+Queue"** sheet — that sheet is your assignment list. Do not wait to be
+told in chat; check the sheet.
+
+- **Sheet:** "Designer Catalog - Sourcing Queue"
+  (ID `1nw1esZNJSDafybd8aeMAZWITWvif9mOcRhdXFxkbSTc`), inside the
+  `designer clothing` Drive folder.
+  https://docs.google.com/spreadsheets/d/1nw1esZNJSDafybd8aeMAZWITWvif9mOcRhdXFxkbSTc/edit
+- **Columns A–L:** Queue # | Date added | Store name | Numbering |
+  Color identifier | DHGate source link | Category | Brand | Photo
+  reference link | Status | Agent result — Drive folder + photo
+  files | Notes.
+- **How to work it:**
+  1. Take the oldest row with Status = "Queued". Change it to
+     "In progress" before you start.
+  2. Work it exactly per Steps 1–6 below. Store + numbering + color
+     identifier are given. The DHGate link is given when known —
+     blank means it is the same as the previous item from that store.
+     The photo reference link is given when Robert has one.
+  3. When it is filed everywhere (Drive photos + tracker row +
+     catalog entries), set Status = "Done" and fill in "Agent
+     result" with the Drive folder path and the photo file names.
+  4. If you are blocked (photo cannot be found, link missing), set
+     Status = "Blocked" and say what you need in Notes — do not
+     leave it as "Queued".
+- The tracker sheet ("Designer Catalog - Product Cross-Reference") is
+  the record of FINISHED items. The queue sheet is the record of
+  items TO DO. An item moves from the queue to the tracker when it is
+  done — it lives in both places, in different states.
+- If you cannot read or write this sheet, say so plainly and work
+  from the rows Robert pastes to you instead; do not claim a status
+  you did not set.
+
 ## What Robert sends (a "drop")
 
 Robert drops items in the "D H Gate" chat, usually as screenshots plus
@@ -274,6 +310,10 @@ Update all three files, then commit them together:
   sets, 1 paused YUPOO drop, 1 blocked sneakers item).
 - Latest filed item: Black 10/29, hzqsq901208 (tracker row 24).
 - Source list: 14 entries.
+- Work queue: "Designer Catalog - Sourcing Queue" sheet (ID
+  `1nw1esZNJSDafybd8aeMAZWITWvif9mOcRhdXFxkbSTc`), created
+  2026-11-08 — Robert adds rows by voice; the agent works the oldest
+  "Queued" row first (see "Work queue" above).
 - **Pending:** Black 11/100 (damai2023) — Reversible link found,
   first 2 photos still needed; Sneakers (DHGate item 1085634430) —
   page unreadable, store name + colors unknown, needs screenshots or
