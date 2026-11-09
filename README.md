@@ -16,17 +16,19 @@ README; the sourcing agent follows WORKFLOW.md.
 
 ## Where everything lives
 
-- **Google Drive root:** `designer clothing`
-  (ID `1elDDNrJSAvRaQrks5lQX7Zio2IBBGQCW`)
-- **Cross-reference tracker (source of truth for names):**
-  Google Sheet "Designer Catalog - Product Cross-Reference"
-  (ID `14H5m_eVRyKjVrhe17sye2qA8EvGP5c17muO5HEvh9gA`),
-  inside the `designer clothing` Drive folder.
-  https://docs.google.com/spreadsheets/d/14H5m_eVRyKjVrhe17sye2qA8EvGP5c17muO5HEvh9gA/edit
+- **Google Drive root:** `designer clothing` — find it by name in
+  Drive.
+- **Cross-reference tracker (source of truth for names and links):**
+  Google Sheet "Designer Catalog - Product Cross-Reference",
+  inside the `designer clothing` Drive folder. Open it by name.
 - **Canva catalog (separate, built by another agent):**
-  "Designer Clothes Website" (design `DAHYXtDPTuw`), nav categories
+  "Designer Clothes Website", nav categories
   Jeans, Outerwear, Hoodies, Tracksuits. Keep the Drive structure in sync
   with it; new folders get mirrored in Canva.
+
+This repo holds instructions and status only. All links and IDs live
+in Google Workspace (Drive folders and Sheets) — find things by name;
+never copy an ID or a link into this repo.
 
 ## The two names — the key rule
 
@@ -73,7 +75,7 @@ point Robert to the exact listing to order from:
 Example: an order for the Tape Type hoodie reads store `damai2023`,
 label `LightPink 41/100`, link = the DHGate listing for that item
 (the DHGate link for the damai2023 batch has not been provided yet —
-`source_link` is empty until it is). The public-facing name
+the Source link column in the tracker sheet is empty until it is). The public-facing name
 (`Balenciaga Tape Type Hoodie Oversized, Faded Black`) is for customers
 only — never use it to order. If an item's store is `TBD`, the store is
 not known yet and the order cannot be placed until it is found.
@@ -96,23 +98,26 @@ interchangeable:
 
 A past mistake, corrected 2026-11-08: the Grailed, Vestiaire,
 Editorialist, and Reversible links for the damai2023 items were
-recorded as source links. They have been moved to
-`photo_reference_link` in `catalog.json` / `catalog.csv` and to the
-"Photo reference link" column in the tracker sheet. Their `source_link`
-is empty until the DHGate ordering links are provided.
+recorded as source links. They belong in the "Photo reference link" column of the tracker
+sheet only — never in this repo. The DHGate ordering links are still
+missing for those items; the Source link column in the tracker sheet
+stays empty until they are provided.
 
 **Per-item record — every product carries all five, when available:**
 store name, source link (DHGate ordering link), color identifier,
-numbering, and photo reference link. They are separate fields on every
-item in `catalog.json` / `catalog.csv` (and separate columns in the
-tracker sheet), so nothing has to be parsed out of a label:
+numbering, and photo reference link. They are separate fields on every item — the store, color
+identifier, and numbering in `catalog.json` / `catalog.csv`, and all
+five as separate columns in the tracker sheet (where the two links
+live), so nothing has to be parsed out of a label:
 
 - **Store name** — e.g. `damai2023` (see above).
 - **Source link** — the DHGate listing where the item is bought, when
-  there is one. Never a photo reference link.
+  there is one. Never a photo reference link. Lives in the tracker
+  sheet only — not in this repo.
 - **Photo reference link** — where the real photo was found (Grailed,
   Vestiaire, Editorialist, etc.). Provenance for the public-facing
-  image only. Never used to order.
+  image only. Never used to order. Lives in the tracker sheet only —
+  not in this repo.
 - **Color identifier** — the color word on its own, e.g. `LightPink`.
 - **Numbering** — the item's number in the store's listing, written
   `N/100`, e.g. `41/100` means item 41 out of 100. So the label
@@ -128,21 +133,21 @@ names, and the `museround27` files use `color1`–`color7`.)
 
 ```
 designer clothing/
-├── hoodies/                                  (ID 1VF9SrirUMgwGutQZmnR5jwgnjpyowNUv)
-│   ├── Balenciaga/                           (ID 1oekTNZ4pi3Ob74TH7w10Mf05ZAeff56r)
-│   │   ├── casualyn/                         (STORE — DHGate store; item 1119231452; DELETED 2026-11-08, folder empty)
-│   │   ├── damai2023/                        (STORE — DHGate store; ID 1I7cWey4y-7fTWWR-tCgSdwFSX9tZZe0G)
+├── hoodies/
+│   ├── Balenciaga/
+│   │   ├── casualyn/                         (STORE — DHGate store; DELETED 2026-11-08, folder empty)
+│   │   ├── damai2023/                        (STORE — DHGate store)
 │   │   │   ├── Green 12/100/
 │   │   │   ├── Olive 40/100/
 │   │   │   ├── LightPink 41/100/
 │   │   │   └── Black 11/100/                 (pending — photos missing)
-│   │   ├── xiaobaie/                         (STORE — DHGate store; ID 1NGEJnjzkksx80zJ7fRd1ihSZ6KWa79mg)
+│   │   ├── xiaobaie/                         (STORE — DHGate store)
 │   │   │   ├── Black 11/81/
 │   │   │   └── Pink 13/81/
-│   │   └── hzqsq901208/                     (STORE — DHGate store; ID 1vICJs1eaF9A6M1VVLp5Gm0gpcuzdfToo)
+│   │   └── hzqsq901208/                     (STORE — DHGate store)
 │   │       └── Black 10/29/
-│   └── Louis Vuitton/                       (ID 1vZiT9efdXISdIkIC1wdbRaNZVHBBmS5E)
-│       └── museround27/                      (STORE; ID 1k9rBCOabFhXurNWa4OXGgOaLShixMFDw; DELETED 2026-11-08, folder empty)
+│   └── Louis Vuitton/
+│       └── museround27/                      (STORE; DELETED 2026-11-08, folder empty)
 ├── jeans/
 │   └── Purple Brand/                         (YUPOO drop — PAUSED, see below)
 ├── outerwear/
@@ -197,7 +202,7 @@ Summary (2026-11-08):
 | Black 10/29 | hzqsq901208 | Balenciaga BB Logo Crewneck Sweatshirt — working title, real name TBD | Done — front photo only in Drive; no back photo; real name still needed |
 | casualyn (53 files) | casualyn | 15 Balenciaga designs, real names in REPLACEMENTS log | DELETED 2026-11-08 — all 53 photos trashed (DHGate-sourced, incl. the 15 real replacements; restorable from trash) |
 | museround27 (6 files) | museround27 | Louis Vuitton monogram crewneck sweatshirts | DELETED 2026-11-08 — all 6 cropped DHGate screenshots trashed |
-| Sneakers, DHGate 1085634430 | TBD | Balenciaga Track trainers | Blocked — DHGate page unreadable (see below) |
+| Sneakers (DHGate Track trainers) | TBD | Balenciaga Track trainers | Blocked — DHGate page unreadable (see below) |
 | Purple Brand, YUPOO | thomamiri | Purple Brand jeans | PAUSED by Robert — 399 picks selected, not yet downloaded |
 
 Notes:
@@ -210,13 +215,12 @@ Notes:
 
 ## Pending / blocked items
 
-- **Sneakers (DHGate item 1085634430, "designer track tracks mens women
-  trainers"):** the DHGate page cannot be read — the browser never loads,
+- **Sneakers (DHGate "designer track tracks mens women trainers" listing — item number in the tracker sheet):** the DHGate page cannot be read — the browser never loads,
   DHGate blocks direct reads, and search has no trace of the listing.
   Store name and colors are unknown. Unblock by opening the link in the
   live browser and handing control back, or by sending screenshots of the
   page (store name + color options).
-- **Black 11/100:** link found — Reversible listing 583629410, brand new, size JP 1. Photos still pending: Reversible blocks direct reads (Cloudflare) and the browser could not load the page. Needs the first 2 photos as screenshots, or the link opened in the live browser.
+- **Black 11/100:** link found — Reversible listing (link in the tracker sheet), brand new, size JP 1. Photos still pending: Reversible blocks direct reads (Cloudflare) and the browser could not load the page. Needs the first 2 photos as screenshots, or the link opened in the live browser.
 - **Olive 40/100 real name:** not yet identified.
 - **Black 10/29 real name:** working title only (Balenciaga BB Logo Crewneck Sweatshirt), not verified against a retailer listing. Front photo only — no back photo was provided.
 
@@ -230,9 +234,11 @@ it step by step. Short version:
    `designer clothing/<category>/<brand>/<store>/<label>/`
    following the photo rules above.
 3. Add a row to the tracker sheet AND to `catalog.json` / `catalog.csv`
-   with the source label, store, real product name, real color, source
-   link, photo file names, and price ONLY if the user provided it —
-   never take a price from a photo-reference link.
+   with the source label, store, real product name, real color, photo
+   file names, and price ONLY if the user provided it —
+   never take a price from a photo-reference link. (The source link
+   and photo reference link go in the tracker sheet only — never in
+   the repo files.)
 4. If the real product name can't be found, put `TBD` and keep the source
    label — never invent a real name.
 

@@ -6,6 +6,10 @@ with it, and how to file it — so the work comes out the same way it did
 before. The website builder reads `README.md`; this file is for the
 agent doing the sourcing and filing. Last updated: 2026-11-08.
 
+Architecture: this repo holds instructions and status only. All links
+and IDs live in Google Workspace (Drive folders and Sheets) — never
+copy them here. Find every file, folder, and sheet by name.
+
 ## Work queue — where your assignments come from
 
 Robert speaks new items to Muse (voice) while away from the app.
@@ -13,10 +17,9 @@ Muse logs each one as a row in the **"Designer Catalog - Sourcing
 Queue"** sheet — that sheet is your assignment list. Do not wait to be
 told in chat; check the sheet.
 
-- **Sheet:** "Designer Catalog - Sourcing Queue"
-  (ID `1nw1esZNJSDafybd8aeMAZWITWvif9mOcRhdXFxkbSTc`), inside the
-  `designer clothing` Drive folder.
-  https://docs.google.com/spreadsheets/d/1nw1esZNJSDafybd8aeMAZWITWvif9mOcRhdXFxkbSTc/edit
+- **Sheet:** "Designer Catalog - Sourcing Queue", inside the
+  `designer clothing` Drive folder. You are integrated with Sheets —
+  open it by name; no link needed.
 - **Columns A–L:** Queue # | Date added | Store name | Numbering |
   Color identifier | DHGate source link | Category | Brand | Photo
   reference link | Status | Agent result — Drive folder + photo
@@ -49,10 +52,10 @@ links. A normal drop has:
 
 1. **Screenshots of the DHGate listing** — the product page, the color
    grid, sometimes the store/reviews page.
-2. **A DHGate share link** (e.g. `https://sale.dhgate.com/hCaTAf63`) —
-   this is the **ordering source**. It resolves to a DHGate item page
-   (e.g. item `1068734596`). Record the share link as the item's
-   `source_link`.
+2. **A DHGate share link** — this is the **ordering source**. It
+   resolves to a DHGate item page. Record the share link as the
+   item's `source_link` in the tracker sheet (it lives there, not
+   in this repo).
 3. **A photo link** (Reversible, Grailed, Editorialist, Saks, StockX…)
    — this is **only** where the real photo lives. It is NOT a source
    and must NEVER be used to order. It also supplies the public-facing
@@ -99,8 +102,8 @@ them from the pics.
     numbering = option position, DHGate color name = position minus 2.
   - `damai2023`: labels are his batch sequence; garment color
     frequently mismatches the label word.
-  - `xiaobaie`: 81 options (`/81`); DHGate share link
-    `https://sale.dhgate.com/eoVHEb75`.
+  - `xiaobaie`: 81 options (`/81`); its DHGate share link is in the
+    tracker sheet.
 
 If the numbering is ambiguous (e.g. the color name and the position
 disagree), pick the position, file it, and **flag the discrepancy to
@@ -199,22 +202,15 @@ Structure: `designer clothing` → `<category>` → `<brand>` →
 `<store>` → `<color label>` (one subfolder per color, named by the
 label, e.g. `Black 10/29` — Drive accepts `/` in the name).
 
-- **Drive root:** `designer clothing` (ID
-  `1elDDNrJSAvRaQrks5lQX7Zio2IBBGQCW`)
-- Category folders: hoodies `1VF9SrirUMgwGutQZmnR5jwgnjpyowNUv`,
-  tracksuits `1XBmZR8NULCSe8Pq4VExTzORE0_sD61UY`, outerwear
-  `1SXwjc8xpSNUaM2Nn7ASnJJPxhzJZ9fyu`, jeans
-  `1PPOaNteZoMSZqLAvr9T8I5MXBxabwLFN`.
-- Brand folders: Balenciaga under hoodies
-  `1oekTNZ4pi3Ob74TH7w10Mf05ZAeff56r`; Louis Vuitton under hoodies
-  `1vZiT9efdXISdIkIC1wdbRaNZVHBBmS5E`; Purple Brand under jeans
-  `1sX8X--C4hb-fXPk1-GgNJVHay8nsFXpj`.
-- Store folders (under Balenciaga unless noted): damai2023
-  `1I7cWey4y-7fTWWR-tCgSdwFSX9tZZe0G`, xiaobaie
-  `1NGEJnjzkksx80zJ7fRd1ihSZ6KWa79mg`, hzqsq901208
-  `1vICJs1eaF9A6M1VVLp5Gm0gpcuzdfToo`; museround27 under Louis Vuitton
-  `1k9rBCOabFhXurNWa4OXGgOaLShixMFDw` (empty — photos deleted, see
-  below). Create a store folder when a new store appears.
+- **Drive root:** `designer clothing` — find it by name in Drive.
+  (Folder IDs are not kept in this repo; open folders by name.)
+- Category folders: hoodies, tracksuits, outerwear, jeans.
+- Brand folders: Balenciaga under hoodies; Louis Vuitton under
+  hoodies; Purple Brand under jeans.
+- Store folders (under Balenciaga unless noted): damai2023,
+  xiaobaie, hzqsq901208; museround27 under Louis Vuitton (empty —
+  photos deleted, see below). Create a store folder when a new store
+  appears.
 - Photo files inside a color folder are named
   `<label>-front.jpg`, `<label>-back.jpg` (plus `-detail`,
   `-model.jpg`, etc. when more views exist), where `<label>` is the
@@ -229,9 +225,9 @@ label, e.g. `Black 10/29` — Drive accepts `/` in the name).
 
 ## Step 5 — Update the tracker sheet (same time as Drive)
 
-Google Sheet **"Designer Catalog - Product Cross-Reference"**
-(ID `14H5m_eVRyKjVrhe17sye2qA8EvGP5c17muO5HEvh9gA`),
-https://docs.google.com/spreadsheets/d/14H5m_eVRyKjVrhe17sye2qA8EvGP5c17muO5HEvh9gA/edit
+Google Sheet **"Designer Catalog - Product Cross-Reference"**,
+inside the `designer clothing` Drive folder. Open it by name — you
+are integrated with Sheets.
 
 Columns A–N: Source label | Store | Category | Real product name
 (for website) | Real color | **Source link (DHGate — order from
@@ -249,8 +245,8 @@ never order from here)**.
   A successful write proves the API accepted the request, not that the
   sheet reads correctly.
 - If a **new store** appears, also add a row to the **"Designer
-  Clothing Source List"** sheet (ID
-  `1jtFfj_GEEr35-GHvrd0k854Z85h9zyzCDKjcpy8w11U`):
+  Clothing Source List"** sheet (in the `designer clothing` folder,
+  open it by name):
   Source name | Link | Use (Photo reference / Ordering / Both) |
   Type | Brands — best for | Clothing types — best for | Status
   (Confirmed / Potential) | Notes | Date added.
@@ -261,13 +257,12 @@ Update all three files, then commit them together:
 
 - **`catalog.json`** — one object per item. Fields: `source_label`,
   `source_color_name`, `color_identifier`, `numbering`, `store`,
-  `category`, `brand`, `public_name`, `public_color`, `source_link`
-  (DHGate ordering link ONLY — empty if not provided),
-  `photo_reference_link` (where the real photo was found — empty if
-  the photo was supplied directly), `drive_folder`,
-  `drive_folder_id`, `photo_files` (array), `retail_price_usd`
+  `category`, `brand`, `public_name`, `public_color`, `drive_folder`
+  (path by folder names), `photo_files` (array), `retail_price_usd`
   (null unless Robert gave it), `date_added`, `status`, `notes`,
-  `source_type`. The `meta` and `naming_rules` sections at the end
+  `source_type`. The two links (`source_link`, the DHGate ordering
+  link, and `photo_reference_link`, where the real photo was found)
+  live ONLY in the tracker sheet — never in this repo. The `meta` and `naming_rules` sections at the end
   are the standing rules — keep them current if a rule changes.
 - **`catalog.csv`** — same items, flat, same column order as the
   header row. Keep it in sync with `catalog.json`.
@@ -291,10 +286,13 @@ Update all three files, then commit them together:
    public-facing name must match the photo.
 3. **Two links, never mixed.** Source link = DHGate ordering link
    ONLY. Photo reference link = where the real photo was found ONLY.
-   The photo reference link is never part of an order.
+   The photo reference link is never part of an order. Both links
+   live in the tracker sheet — never in this repo.
 4. **Per-item record.** Every product carries store name, source
    link, color identifier, numbering, and photo reference link as
-   separate fields — nothing parsed out of a label at order time.
+   separate fields in the tracker sheet — nothing parsed out of a
+   label at order time. This repo carries the store, color
+   identifier, and numbering; the two links stay in the tracker.
 5. **Prices only from Robert.** Never from a photo-reference link.
 6. **File it everywhere at once.** Drive photos + tracker row +
    catalog.json/csv + README, in the same pass. Verify each one by
@@ -310,14 +308,14 @@ Update all three files, then commit them together:
   sets, 1 paused YUPOO drop, 1 blocked sneakers item).
 - Latest filed item: Black 10/29, hzqsq901208 (tracker row 24).
 - Source list: 14 entries.
-- Work queue: "Designer Catalog - Sourcing Queue" sheet (ID
-  `1nw1esZNJSDafybd8aeMAZWITWvif9mOcRhdXFxkbSTc`), created
+- Work queue: "Designer Catalog - Sourcing Queue" sheet, created
   2026-11-08 — Robert adds rows by voice; the agent works the oldest
   "Queued" row first (see "Work queue" above).
-- **Pending:** Black 11/100 (damai2023) — Reversible link found,
-  first 2 photos still needed; Sneakers (DHGate item 1085634430) —
-  page unreadable, store name + colors unknown, needs screenshots or
-  live-browser takeover; Purple Brand YUPOO drop — PAUSED by Robert,
+- **Pending:** Black 11/100 (damai2023) — Reversible link found
+  (link in the tracker sheet), first 2 photos still needed; Sneakers
+  (DHGate Track trainers listing — item number in the tracker sheet)
+  — page unreadable, store name + colors unknown, needs screenshots
+  or live-browser takeover; Purple Brand YUPOO drop — PAUSED by Robert,
   399 picks selected, do not resume without a new direction; Olive
   40/100 and Pink 13/81 and Black 10/29 real names still TBD
   (working titles in use); DHGate ordering links still missing for
@@ -329,11 +327,12 @@ Update all three files, then commit them together:
   the trash and restorable if Robert asks; the replacement log is in
   the local working files (`authentic/REPLACEMENTS.md`).
 
-## If you do not have Drive / Sheets access
+## If your Drive / Sheets access ever breaks
 
-Do everything above that you can: source the real photos, work out
-the store / label / numbering / color identifier / real name, and
-prepare the photo files plus the exact tracker row and catalog
-entries. Then say clearly what you could not file yourself and hand
-Robert the ready-to-append row and the files — do not claim anything
-is in Drive or the tracker until it is verified there.
+You are integrated with Google Sheets and Drive — open sheets and
+folders by name. If that access ever breaks, say so plainly, do
+everything above that you can (source the real photos, work out the
+store / label / numbering / color identifier / real name), and prepare
+the photo files plus the exact tracker row and catalog entries. Then
+hand Robert the ready-to-append row and the files — do not claim
+anything is in Drive or the tracker until it is verified there.
