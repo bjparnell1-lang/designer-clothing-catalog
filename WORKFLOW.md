@@ -50,10 +50,6 @@ told in chat; check the sheet.
   White), Q-003 (12/100, public Black). Q-002 and Q-003 are the same
   item, one website listing. Once an item is done, its record is in
   the tracker sheet under its source label.
-- **Duplicate numbering:** if Robert ever dictates a numbering that
-  is already in the queue (same store + same numbering), do NOT log
-  it again — either skip it silently or tell him he already said
-  that one. Check the sheet before logging every new row.
 - If you cannot read or write this sheet, say so plainly and work
   from the rows Robert pastes to you instead; do not claim a status
   you did not set.
