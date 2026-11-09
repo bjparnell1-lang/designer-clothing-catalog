@@ -211,7 +211,8 @@ Notes:
    following the photo rules above.
 3. Add a row to the tracker sheet AND to `catalog.json` / `catalog.csv`
    with the source label, store, real product name, real color, source
-   link, photo file names, and price when known.
+   link, photo file names, and price ONLY if the user provided it —
+   never take a price from a photo-reference link.
 4. If the real product name can't be found, put `TBD` and keep the source
    label — never invent a real name.
 

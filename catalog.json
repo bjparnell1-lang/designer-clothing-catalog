@@ -15,7 +15,7 @@
    ],
    "public_color": "Black",
    "public_name": "Balenciaga Retro Printed Hoodie (Top League multi-logo design)",
-   "retail_price_usd": 825,
+   "retail_price_usd": null,
    "source_label": "Green 12/100",
    "source_link": "",
    "source_type": "Grailed listing 94313232",
@@ -67,7 +67,7 @@
    ],
    "public_color": "Black",
    "public_name": "Balenciaga Tape Type Hoodie Oversized, Faded Black",
-   "retail_price_usd": 1514,
+   "retail_price_usd": null,
    "source_label": "LightPink 41/100",
    "source_link": "",
    "source_type": "Editorialist listing",
@@ -88,7 +88,7 @@
    "photo_files": [],
    "public_color": "Black (per source label; listing color field not yet confirmed)",
    "public_name": "Balenciaga Racing Logo Print Long Sleeve Hoodie",
-   "retail_price_usd": 1000,
+   "retail_price_usd": null,
    "source_label": "Black 11/100",
    "source_link": "",
    "source_type": "",
@@ -224,7 +224,7 @@
     "black-11-81-model.jpg",
     "black-11-81-detail.jpg"
    ],
-   "retail_price_usd": 1550,
+   "retail_price_usd": null,
    "date_added": "2026-11-08",
    "status": "done",
    "notes": "Style 742603TOVN7. DHGate price $62.12 (1 pc). Photos are the MR PORTER set (front flat, on-model front, logo close-up) via the Reversible listing. 2nd photo is on-model front, not back."
@@ -293,6 +293,7 @@
   "numbering": "The item's number within the store's listing, written as N/100 (e.g. '41/100' means item 41 out of 100). It is the second half of the source label: 'LightPink 41/100' splits into color identifier 'LightPink' + numbering '41/100'. Record it exactly as shown; if a listing has no numbering, leave it blank.",
   "per_item_record": "Every product carries: store name, source link (DHGate ordering link, when available), color identifier, and numbering (when available). The photo reference link is a separate fifth field and is never an ordering source. Together with the source label they identify the exact store variant to order.",
   "source_link": "The ordering link ONLY: the DHGate listing (or YUPOO category for the Purple Brand drop) where the item is bought. Never a Grailed, Vestiaire, Editorialist, Saks, StockX, or Reversible link \u2014 those are photo references, not sources. Empty means the DHGate ordering link has not been provided yet.",
-  "photo_reference_link": "Where the real, unedited photo was found (Grailed, Vestiaire Collective, Editorialist, Saks, StockX, Reversible, Kering DAM, etc.). This link exists ONLY to show where the public-facing photo came from \u2014 it is NOT a source and must NEVER be used to order. The photo itself is the product image customers see; the link is provenance only."
+  "photo_reference_link": "Where the real, unedited photo was found (Grailed, Vestiaire Collective, Editorialist, Saks, StockX, Reversible, Kering DAM, etc.). This link exists ONLY to show where the public-facing photo came from \u2014 it is NOT a source and must NEVER be used to order. The photo itself is the product image customers see; the link is provenance only.",
+  "retail_price": "Leave retail_price_usd EMPTY unless the user provides the price himself. NEVER take the price from a photo-reference link (Grailed, Vestiaire, Editorialist, Reversible, Saks, StockX, MR PORTER, etc.) \u2014 the price on those pages is irrelevant. The user will give prices later."
  }
 }
