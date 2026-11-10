@@ -117,11 +117,14 @@ them from the pics.
   - `xiaobaie`: 81 options (`/81`); its DHGate share link is in the
     tracker sheet.
 
-If the numbering is ambiguous (e.g. the color name and the position
-disagree), pick the position, file it, and **flag the discrepancy to
-Robert in your reply** so he can correct you. When he confirms, record
-the reason (like the 2-place lag above) in the tracker notes, the
-catalog notes, and this file, so it sticks.
+The option number is its position in the listing, starting at 1, unless
+the displayed N/total contradicts that position. A supplier's color
+name may differ from the position and from the garment's visible color;
+that alone is not a numbering discrepancy. If a displayed option
+number contradicts its position (for example, the fifth option shows
+3/100), stop relying on position for that listing and tell Robert;
+do not guess or file an unverified mapping. Record any confirmed
+explanation in the tracker notes, catalog notes, and this file.
 
 ### Verify the product on DHGate before you search for the photo
 
@@ -133,9 +136,12 @@ know you have the right one:
    and compare it with the numbering shown at the bottom of the picture
    on DHGate (the option thumbnails show the number). Find the one
    where the numbering matches.
-2. When the numbering matches, click on the product — the color should
-   show. If the color does not show, select a size, and the color
-   should come up then.
+2. Select the matching numbered product. If the supplier's color label
+   is not shown, select any available size as if preparing to add it to
+   the cart; the resulting selection screen should show the source
+   color. Read and record the supplier's exact label. Do not add the
+   item to the cart or place an order as part of this check. If the
+   label remains unavailable, mark it unverified and report the block.
 3. If that color matches the color you are working on, you can be sure
    it is the correct product and the correct picture. That is the
    confirmation — do not skip it.
