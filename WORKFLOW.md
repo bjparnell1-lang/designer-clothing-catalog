@@ -24,26 +24,27 @@ told in chat; check the sheet.
   Color identifier | DHGate source link | Category | Brand | Photo
   reference link | Status | Agent result — Drive folder + photo
   files | Notes.
-- **How to work it:**
-  1. Take the oldest row with Status = "Queued". Change it to
-     "In progress" before you start.
-  2. Work it exactly per Steps 1–6 below. Store + numbering are
-     given. The color identifier is given when Robert knows it — if
-     it is blank, derive it from DHGate (Step 1 verification: match
-     the numbering, click a size, the color shows) and fill it in.
-     The DHGate link is given when known — blank means it is the
-     same as the previous item from that store. The photo reference
-     link is given when Robert has one.
-  3. When it is filed everywhere (Drive photos + tracker row +
-     catalog entries), set Status = "Done" and fill in "Agent
-     result" with the Drive folder path and the photo file names.
-  4. If you are blocked (photo cannot be found, link missing), set
-     Status = "Blocked" and say what you need in Notes — do not
-     leave it as "Queued".
-- The tracker sheet ("Designer Catalog - Product Cross-Reference") is
-  the record of FINISHED items. The queue sheet is the record of
-  items TO DO. An item moves from the queue to the tracker when it is
-  done — it lives in both places, in different states.
+- **How to work it:** Read the queue to identify assignments and
+  grouping instructions. The queue is read-only: do not add rows,
+  change statuses, or write notes or results to it. Use Robert's
+  later corrections when the queue conflicts with his instructions.
+- **Source of truth:** The "Designer Catalog - Product Cross-Reference"
+  Google Sheet is the authoritative record for both source-facing and
+  public-facing product data. Keep it updated as work progresses,
+  including incomplete or unverified fields marked as such. Do not
+  treat the queue or the repository's catalog copies as a replacement
+  for the cross-reference.
+- For each ordering option record the source link, store name, option
+  numbering (e.g. 1/100), and the supplier's exact source color. For
+  each public variant record the real visible garment color as detected
+  from its photo, product name, photo reference, and other verified
+  details useful to identify and fulfill the order. Keep source color
+  distinct from visible color. An order must identify the selected
+  public variant and all of its corresponding source details. When
+  multiple stores sell the same exact product, preserve every source
+  and its ordering details while reusing existing handpicked photos.
+- Ask Robert whether matching designs should share one listing unless
+  he has already confirmed their grouping. Use his confirmed grouping.
 - **Examples in this file:** when a rule names a numbering (7/100,
   11/100, 12/100), it means these queue rows — Q-001 (7/100,
   damai2023, source Gold, public Black), Q-002 (11/100, public
