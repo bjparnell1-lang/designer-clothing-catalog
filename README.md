@@ -18,7 +18,7 @@ README; the sourcing agent follows WORKFLOW.md.
 
 - **Google Drive root:** `designer clothing` — find it by name in
   Drive.
-- **Cross-reference tracker (source of truth for names and links):**
+- **Cross-reference tracker (source of truth for source-facing and public-facing product data):**
   Google Sheet "Designer Catalog - Product Cross-Reference",
   inside the `designer clothing` Drive folder. Open it by name.
 - **Website (ChatGPT Sites):** the site is built in ChatGPT Sites
@@ -29,6 +29,17 @@ README; the sourcing agent follows WORKFLOW.md.
 This repo holds instructions and status only. All links and IDs live
 in Google Workspace (Drive folders and Sheets) — find things by name;
 never copy an ID or a link into this repo.
+
+The sourcing queue is read-only and supplies assignments and grouping
+instructions. Keep the cross-reference updated as work progresses, with
+unknown or unverified fields clearly marked. Record each source's
+ordering link, store, option numbering, and exact supplier color, plus
+the public variant's AI-detected visible color, real product name, photo
+reference, and other verified details needed to fulfill an order. The
+selected variant must resolve to the correct source details; preserve
+multiple ordering sources for an exact matching product. Robert's
+later corrections override conflicting queue entries. Ask him before
+grouping matching designs unless he has already confirmed the grouping.
 
 ## The two names — the key rule
 
