@@ -373,7 +373,18 @@ never order from here)**.
 - **The tracker is ONLY for updating after the reverse image search
   finds the pictures that will actually be used.** Do not put an item
   in the tracker while it is still to do — until its photos are found
-  and filed, it lives ONLY in the queue.
+  and filed, it lives ONLY in the queue. Write the row only after the
+  AI color identification in Step 3 — the Real color column takes the
+  AI-identified actual color of the garment, not the source color
+  identifier.
+- **Fill every gap when you update the tracker.** When you write or
+  update a row, check the whole row for missing links and missing
+  data. If the source link (column F) or the photo reference link
+  (column N) is missing, get it there — from the queue row, the drop,
+  or the source where you found the photo. If any other data is
+  missing (real name, real color, photo files), get that there too.
+  If you cannot find it, say so in Notes and flag it to Robert — do
+  not leave a blank silently.
 - **Rows 8–21 are 14 legacy placeholder rows** ("Not recorded (legacy
   site ID lv-7090…)") that predate this work. Do not delete them
   without Robert's say-so — new appends land after them.
@@ -447,6 +458,15 @@ Update all three files, then commit them together:
     2026-11-09).** File names can be different versions of the file
     name so they do not duplicate; the folder name must be the closest
     match — the exact color identifier + numbering label.
+11. **Public color comes from AI, not the source label (2026-11-10).**
+    Use AI to identify the actual color of the garment from the photo
+    — that is the public-facing color in the tracker and on the
+    website. The source color identifier stays in its own column;
+    never use it as the public color. Robert's word for the public
+    color wins over the AI reading; a disagreement gets flagged.
+12. **No blank left silently (2026-11-10).** When you update the
+    tracker, fill every missing link and every missing piece of data
+    you can find; flag what you cannot find in Notes.
 11. **Same item, different colors = one listing (2026-11-09).**
     Group them; tell them apart by public-facing color. The listing
     shows color circles on the card itself — clicking a circle swaps
