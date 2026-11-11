@@ -256,6 +256,16 @@ Folder rules:
 
 ## Photo rules
 
+- Aim for two distinct usable photo sources per option, each in its own
+  source-named folder under the option folder. One good front from one
+  source is enough when the additional search reaches the limits in
+  WORKFLOW.md. When Robert marks a source folder green, use it for the
+  website; disregard gray alternatives. A comment saying `display` on a
+  photo identifies the display image. Verify actual colors and comments.
+- Group matching designs into one public listing with separate color
+  variants and separate source ordering records.
+- Temporarily exclude Louis Vuitton items in Pending Pictures while
+  another agent handles them, until Robert changes that instruction.
 - **Photo count (global rule, 2026-11-11):** One good matching front
   is enough. Add a back or other nonredundant views when available within
   the search limits in WORKFLOW.md. Once a good front is found, spend at
