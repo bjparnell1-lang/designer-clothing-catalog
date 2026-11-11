@@ -1,5 +1,10 @@
 # Catalog Workflow — Agent Takeover Playbook
 
+## Current standing instructions (override older queue directions below)
+
+- The Sourcing Queue is read-only: use it to identify assignments and groupings, but do not change its rows or statuses. Maintain the Product Cross-Reference as the source of truth for both ordering and public-facing data.
+- Once a product has a usable photo source, inspect at most 20 further search results while looking for an additional photo source. If none works within that limit, keep the usable source and move to the next product. This limit does not stop the search for an initial usable source.
+
 This file is the operating manual for the agent who takes over this
 catalog from here. It tells you exactly what Robert sends, what to do
 with it, and how to file it — so the work comes out the same way it did
