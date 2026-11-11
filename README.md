@@ -18,7 +18,7 @@ README; the sourcing agent follows WORKFLOW.md.
 
 - **Google Drive root:** `designer clothing` — find it by name in
   Drive.
-- **Cross-reference tracker (source of truth for source-facing and public-facing product data):**
+- **Cross-reference tracker (source of truth for names and links):**
   Google Sheet "Designer Catalog - Product Cross-Reference",
   inside the `designer clothing` Drive folder. Open it by name.
 - **Website (ChatGPT Sites):** the site is built in ChatGPT Sites
@@ -29,17 +29,6 @@ README; the sourcing agent follows WORKFLOW.md.
 This repo holds instructions and status only. All links and IDs live
 in Google Workspace (Drive folders and Sheets) — find things by name;
 never copy an ID or a link into this repo.
-
-The sourcing queue is read-only and supplies assignments and grouping
-instructions. Keep the cross-reference updated as work progresses, with
-unknown or unverified fields clearly marked. Record each source's
-ordering link, store, option numbering, and exact supplier color, plus
-the public variant's AI-detected visible color, real product name, photo
-reference, and other verified details needed to fulfill an order. The
-selected variant must resolve to the correct source details; preserve
-multiple ordering sources for an exact matching product. Robert's
-later corrections override conflicting queue entries. Ask him before
-grouping matching designs unless he has already confirmed the grouping.
 
 ## The two names — the key rule
 
@@ -75,9 +64,10 @@ on the website — not one listing per color. The items are different
 numbers on the source side (different DHGate option numbers, e.g. 11/100
 and 12/100), but they are the same item, so the website shows them as a
 single listing and tells them apart by public-facing color (e.g. 11 =
-white, 12 = black). Robert may do this again — whenever two items are
-the same product in different colors, group them into one listing the
-same way.
+white, 12 = black). This applies to every listing with different colors
+of the same style — not only the ones Robert grouped by name. Whenever
+two items are the same product in different colors, group them into one
+listing the same way, whether Robert said so or the agent identified it.
 
 **Color swatches on the listing itself.** A person looking at the
 listings must be able to see that other colors are available WITHOUT

@@ -292,9 +292,11 @@ each item's public color (Robert gives it, e.g. 11 = white, 12 = black)
 in the tracker / catalog notes. The website shows small color circles
 on the listing itself (see README.md "Listings — one item, several
 colors"): the shopper sees the other colors without opening the listing,
-and clicking a circle swaps the color shown on the listing card. Robert
-may group items this way again — apply the same rule whenever he says
-two items are the same product in different colors.
+and clicking a circle swaps the color shown on the listing card. This
+applies to every listing with different colors of the same style — not
+only the ones Robert grouped by name. Whenever two items are the same
+product in different colors, group them into one listing the same way,
+whether Robert said so or the agent identified it.
 
 **The cart must remember the exact variant.** When a shopper adds a
 color to the cart, the order must carry that color's backend record —
