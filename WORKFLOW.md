@@ -3,7 +3,9 @@
 ## Current standing instructions (override older queue directions below)
 
 - The Sourcing Queue is read-only: use it to identify assignments and groupings, but do not change its rows or statuses. Maintain the Product Cross-Reference as the source of truth for both ordering and public-facing data.
-- Once a product has a usable photo source, inspect at most 20 further search results while looking for an additional photo source. If none works within that limit, keep the usable source and move to the next product. This limit does not stop the search for an initial usable source.
+- One good, visually matching front photo is sufficient. Include a matching back or nonredundant extra angles when readily available; do not hold the item for a back. Robert's specific per-item instructions override this rule.
+- Once a good matching front is found, spend at most three minutes of additional Apify search and review looking for a back photo or second photo set, then file what is usable and move on. When looking for a second photo source, also stop after reviewing 20 results; whichever limit comes first applies. These limits do not cut off the search for the initial usable front.
+- Track actual time per product option going forward: active time to find and visually verify a usable front; additional time looking for a back or second set; and time downloading, filing, and updating the cross-reference. Record total active time, search method or actor, outcome, and significant waiting or interruptions separately in the Product Cross-Reference notes or another appropriate existing tracking record, never in the read-only Sourcing Queue. Do not invent earlier timings; report measured averages and sample sizes when asked.
 
 This file is the operating manual for the agent who takes over this
 catalog from here. It tells you exactly what Robert sends, what to do
@@ -109,13 +111,9 @@ position in the order he attached them (left to right as he sees them).
 You receive them in the same left-to-right order. Example: "the photos
 I want you to use is 3 and 4" means the 3rd and 4th attachments.
 
-**Photo count per item (global rule, set 2026-11-09): 3 photos per
-product at least** — front, back, and one more angle. If a source has
-different angles of the garment, include them only if they are not
-redundant or repetitive. If you cannot get 3 photos, 2 is fine. If you
-cannot get 2, 1 is fine. His per-item instruction overrides this
-("use all photos" for LightPink 41/100, "use the first 3 photos" for
-Black 11/81).
+**Photo count per item (updated 2026-11-11):** One good matching front
+is enough. Add a back or other nonredundant views within the standing
+search limits above. Robert's specific per-item instruction overrides.
 
 ## Step 1 — Read the drop: store, color, numbering
 
@@ -205,7 +203,8 @@ The real photo must show the **full brand name, unedited** — never a
 version with the name blocked out or edited out, and never a version
 where a letter has been changed or the brand made to look different
 (e.g. "balen" instead of "Balenciaga"). Search for that same exact
-design until you find the real, unedited version — front and back.
+design until you find a good, unedited matching front. A back is optional
+and subject to the standing search limits.
 Product-only images: never whole webpages, listing UI, review text, or
 add-to-cart elements. Include the **back view** when the listing shows
 one (t-shirts, hoodies); skip it when it doesn't make sense (socks).
@@ -478,10 +477,9 @@ Update all three files, then commit them together:
 8. **When Robert corrects you, record the reason** — in the tracker
    notes, the catalog notes, and this file — so the correction never
    has to be made twice. (Example: the hzqsq901208 2-place lag.)
-9. **Photo count (global rule, 2026-11-09).** 3 photos per product at
-   least; extra angles only if they are not redundant or repetitive;
-   2 if 3 is not possible, 1 if 2 is not possible. Robert's per-item
-   instruction overrides.
+9. **Photo count (updated 2026-11-11).** One good matching front is
+   enough. A back or another photo set is optional; follow the three-minute
+   and 20-result limits above. Robert's per-item instruction overrides.
 10. **File names may vary; the folder must match (global rule,
     2026-11-09).** File names can be different versions of the file
     name so they do not duplicate; the folder name must be the closest

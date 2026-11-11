@@ -256,11 +256,13 @@ Folder rules:
 
 ## Photo rules
 
-- **Hoodies and sweatshirts (global rule, 2026-11-09):** 3 photos per
-  product at least — front, back, and one more angle. Extra angles only
-  if they are not redundant or repetitive. If 3 cannot be found, 2 is
-  fine; if 2 cannot be found, 1 is fine. Robert's per-item instruction
-  overrides (LightPink 41/100: all 6 photos; Black 11/81: first 3).
+- **Photo count (global rule, 2026-11-11):** One good matching front
+  is enough. Add a back or other nonredundant views when available within
+  the search limits in WORKFLOW.md. Once a good front is found, spend at
+  most three additional minutes with Apify looking for a back or second
+  photo set; for an additional source, also stop after 20 results.
+  Robert's per-item instruction overrides. Track measured sourcing and
+  filing time per option as described in WORKFLOW.md.
 - **Sneakers:** up to 3 pics per color, from a reverse image search.
   Check the first source found online for other views of the same listing
   first — it usually has them. If only 2 can be found, use 2; if only 1,
