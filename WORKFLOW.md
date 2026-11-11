@@ -33,7 +33,12 @@ told in chat; check the sheet.
      the numbering, click a size, the color shows) and fill it in.
      The DHGate link is given when known — blank means it is the
      same as the previous item from that store. The photo reference
-     link is given when Robert has one.
+     link is given when Robert has one. Read the whole row, including
+     Notes, before you start — Notes carries everything Robert said
+     about this item (which other queue items it shares one listing
+     with, any public-facing color he stated, how many photos to
+     use, where the pictures go). That is your complete brief; never
+     work from the numbering alone.
   3. When it is filed everywhere (Drive photos + tracker row +
      catalog entries), set Status = "Done" and fill in "Agent
      result" with the Drive folder path and the photo file names.
@@ -458,15 +463,6 @@ Update all three files, then commit them together:
     2026-11-09).** File names can be different versions of the file
     name so they do not duplicate; the folder name must be the closest
     match — the exact color identifier + numbering label.
-11. **Public color comes from AI, not the source label (2026-11-10).**
-    Use AI to identify the actual color of the garment from the photo
-    — that is the public-facing color in the tracker and on the
-    website. The source color identifier stays in its own column;
-    never use it as the public color. Robert's word for the public
-    color wins over the AI reading; a disagreement gets flagged.
-12. **No blank left silently (2026-11-10).** When you update the
-    tracker, fill every missing link and every missing piece of data
-    you can find; flag what you cannot find in Notes.
 11. **Same item, different colors = one listing (2026-11-09).**
     Group them; tell them apart by public-facing color. The listing
     shows color circles on the card itself — clicking a circle swaps
@@ -508,6 +504,26 @@ Update all three files, then commit them together:
     search: if the photo is already there, keep it and skip the
     search — but still record the new source, so Robert has the
     option of which source to order from.
+16. **Public color comes from AI, not the source label (2026-11-10).**
+    Use AI to identify the actual color of the garment from the photo
+    — that is the public-facing color in the tracker and on the
+    website. The source color identifier stays in its own column;
+    never use it as the public color. Robert's word for the public
+    color wins over the AI reading; a disagreement gets flagged.
+17. **No blank left silently (2026-11-10).** When you update the
+    tracker, fill every missing link and every missing piece of data
+    you can find; flag what you cannot find in Notes.
+18. **Every queue row carries all the context Robert gives for that
+    item (2026-11-10).** The queue row is the agent's complete brief:
+    store, brand, category, color identifier, numbering, DHGate source
+    link, photo reference link — and in Notes, everything Robert says
+    about the item: which other queue items it shares one listing
+    with, any public-facing color he states, how many photos to use,
+    where the pictures go, anything else. If Robert states a public
+    color, record it; if he does not, the agent identifies it with AI
+    (Step 3) — never leave it to be guessed. Read the whole row,
+    including Notes, before starting; never work from the numbering
+    alone.
 
 ## Current state (2026-11-08)
 
