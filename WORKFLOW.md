@@ -4,7 +4,7 @@ This file is the operating manual for the agent who takes over this
 catalog from here. It tells you exactly what Robert sends, what to do
 with it, and how to file it — so the work comes out the same way it did
 before. The website builder reads `README.md`; this file is for the
-agent doing the sourcing and filing. Last updated: 2026-11-09.
+agent doing the sourcing and filing. Last updated: 2026-11-10.
 
 Architecture: this repo holds instructions and status only. All links
 and IDs live in Google Workspace (Drive folders and Sheets) — never
@@ -58,6 +58,22 @@ told in chat; check the sheet.
 - If you cannot read or write this sheet, say so plainly and work
   from the rows Robert pastes to you instead; do not claim a status
   you did not set.
+
+## Pending Pictures — where Robert's screenshots wait
+
+The **"Pending Pictures"** Drive folder (inside the `designer clothing`
+folder) holds Robert's DHGate screenshots while they wait for you to
+reverse-image-search them. Structure mirrors the catalog:
+`Pending Pictures` → `<store>` → `<brand>` → `<category>` (e.g.
+`Pending Pictures > dawnsong35 > Louis Vuitton > sweatshirts`).
+Screenshots are cropped to product-only before filing — no app UI,
+headers, or "Find Similar" buttons.
+
+**File-name format (standing rule, set 2026-11-10):**
+`<number>.<total><brand>.png` — the numbering with a dot instead of
+the slash, then the brand name lowercase with no spaces, then `.png`.
+Examples: `11.100balenciaga.png`, `1.7louisvuitton.png`. Keep this
+format for every file in Pending Pictures.
 
 ## What Robert sends (a "drop")
 
