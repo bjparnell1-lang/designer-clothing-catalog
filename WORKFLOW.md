@@ -24,27 +24,26 @@ told in chat; check the sheet.
   Color identifier | DHGate source link | Category | Brand | Photo
   reference link | Status | Agent result — Drive folder + photo
   files | Notes.
-- **How to work it:** Read the queue to identify assignments and
-  grouping instructions. The queue is read-only: do not add rows,
-  change statuses, or write notes or results to it. Use Robert's
-  later corrections when the queue conflicts with his instructions.
-- **Source of truth:** The "Designer Catalog - Product Cross-Reference"
-  Google Sheet is the authoritative record for both source-facing and
-  public-facing product data. Keep it updated as work progresses,
-  including incomplete or unverified fields marked as such. Do not
-  treat the queue or the repository's catalog copies as a replacement
-  for the cross-reference.
-- For each ordering option record the source link, store name, option
-  numbering (e.g. 1/100), and the supplier's exact source color. For
-  each public variant record the real visible garment color as detected
-  from its photo, product name, photo reference, and other verified
-  details useful to identify and fulfill the order. Keep source color
-  distinct from visible color. An order must identify the selected
-  public variant and all of its corresponding source details. When
-  multiple stores sell the same exact product, preserve every source
-  and its ordering details while reusing existing handpicked photos.
-- Ask Robert whether matching designs should share one listing unless
-  he has already confirmed their grouping. Use his confirmed grouping.
+- **How to work it:**
+  1. Take the oldest row with Status = "Queued". Change it to
+     "In progress" before you start.
+  2. Work it exactly per Steps 1–6 below. Store + numbering are
+     given. The color identifier is given when Robert knows it — if
+     it is blank, derive it from DHGate (Step 1 verification: match
+     the numbering, click a size, the color shows) and fill it in.
+     The DHGate link is given when known — blank means it is the
+     same as the previous item from that store. The photo reference
+     link is given when Robert has one.
+  3. When it is filed everywhere (Drive photos + tracker row +
+     catalog entries), set Status = "Done" and fill in "Agent
+     result" with the Drive folder path and the photo file names.
+  4. If you are blocked (photo cannot be found, link missing), set
+     Status = "Blocked" and say what you need in Notes — do not
+     leave it as "Queued".
+- The tracker sheet ("Designer Catalog - Product Cross-Reference") is
+  the record of FINISHED items. The queue sheet is the record of
+  items TO DO. An item moves from the queue to the tracker when it is
+  done — it lives in both places, in different states.
 - **Examples in this file:** when a rule names a numbering (7/100,
   11/100, 12/100), it means these queue rows — Q-001 (7/100,
   damai2023, source Gold, public Black), Q-002 (11/100, public
@@ -118,14 +117,11 @@ them from the pics.
   - `xiaobaie`: 81 options (`/81`); its DHGate share link is in the
     tracker sheet.
 
-The option number is its position in the listing, starting at 1, unless
-the displayed N/total contradicts that position. A supplier's color
-name may differ from the position and from the garment's visible color;
-that alone is not a numbering discrepancy. If a displayed option
-number contradicts its position (for example, the fifth option shows
-3/100), stop relying on position for that listing and tell Robert;
-do not guess or file an unverified mapping. Record any confirmed
-explanation in the tracker notes, catalog notes, and this file.
+If the numbering is ambiguous (e.g. the color name and the position
+disagree), pick the position, file it, and **flag the discrepancy to
+Robert in your reply** so he can correct you. When he confirms, record
+the reason (like the 2-place lag above) in the tracker notes, the
+catalog notes, and this file, so it sticks.
 
 ### Verify the product on DHGate before you search for the photo
 
@@ -137,12 +133,9 @@ know you have the right one:
    and compare it with the numbering shown at the bottom of the picture
    on DHGate (the option thumbnails show the number). Find the one
    where the numbering matches.
-2. Select the matching numbered product. If the supplier's color label
-   is not shown, select any available size as if preparing to add it to
-   the cart; the resulting selection screen should show the source
-   color. Read and record the supplier's exact label. Do not add the
-   item to the cart or place an order as part of this check. If the
-   label remains unavailable, mark it unverified and report the block.
+2. When the numbering matches, click on the product — the color should
+   show. If the color does not show, select a size, and the color
+   should come up then.
 3. If that color matches the color you are working on, you can be sure
    it is the correct product and the correct picture. That is the
    confirmation — do not skip it.
@@ -377,6 +370,10 @@ never order from here)**.
 
 - **Every new item gets a row at the same time its photos go to
   Drive.** Append after the last row.
+- **The tracker is ONLY for updating after the reverse image search
+  finds the pictures that will actually be used.** Do not put an item
+  in the tracker while it is still to do — until its photos are found
+  and filed, it lives ONLY in the queue.
 - **Rows 8–21 are 14 legacy placeholder rows** ("Not recorded (legacy
   site ID lv-7090…)") that predate this work. Do not delete them
   without Robert's say-so — new appends land after them.
