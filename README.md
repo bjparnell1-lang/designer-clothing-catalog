@@ -256,6 +256,7 @@ Folder rules:
 
 ## Photo rules
 
+- **Supplier screenshots are comparison-only.** Each photo-source folder contains a copy of the DHGate screenshot used for that option, named `DO-NOT-USE-SUPPLIER-REFERENCE-<option-number>.<extension>`. Website builders and importers must exclude these files from public product images, thumbnails, galleries, and display-image selection, including when a folder is green. Use only verified public photos in the selected source folder; a `display` comment applies to an eligible public photo, never to a supplier reference. See WORKFLOW.md for filing and verification.
 - Aim for two distinct usable photo sources per option, each in its own
   source-named folder under the option folder. One good front from one
   source is enough when the additional search reaches the limits in
