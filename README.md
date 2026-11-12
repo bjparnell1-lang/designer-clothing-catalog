@@ -267,6 +267,7 @@ Folder rules:
 
 ## Photo rules
 
+- **Approved AI recolors:** An AI-recolored photo derived from a reverse-image-sourced real photo of the exact same style may be used for a target color only after Robert approves the proposed base for that case. Preserve the option number and mark the file `AI-recolor`, e.g. `option-9-100-front-AI-recolor.png`; the tag denotes an edited image, not a real photo of the target color. The Product Cross-Reference records the base, source, target and approval. Respect the green-folder and `display` selection rules; always exclude supplier-reference files. See WORKFLOW.md for the review and search workflow. Robert has approved the existing damai2023 white 9/100 recolor.
 - **Supplier screenshots are comparison-only.** Each photo-source folder contains a copy of the DHGate screenshot used for that option, named `DO-NOT-USE-SUPPLIER-REFERENCE-<option-number>.<extension>`. Website builders and importers must exclude these files from public product images, thumbnails, galleries, and display-image selection, including when a folder is green. Use only verified public photos in the selected source folder; a `display` comment applies to an eligible public photo, never to a supplier reference. See WORKFLOW.md for filing and verification.
 - Aim for two distinct usable photo sources per option, each in its own
   source-named folder under the option folder. One good front from one
