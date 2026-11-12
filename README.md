@@ -228,14 +228,14 @@ designer clothing/
 ├── handbags/
 │   └── Louis Vuitton/
 │       └── kedaya1/                          (STORE — DHGate store; NEW 2026-11-11)
-│           ├── Option 53/60 (source color unconfirmed)/
-│           ├── Option 54/60 (source color unconfirmed)/
-│           ├── Option 55/60 (source color unconfirmed)/
-│           ├── Option 56/60 (source color unconfirmed)/
-│           ├── Option 57/60 (source color unconfirmed)/
-│           ├── Option 58/60 (source color unconfirmed)/
-│           ├── Option 59/60 (source color unconfirmed)/
-│           └── Option 60/60 (source color unconfirmed)/
+│           ├── #43 53/60/
+│           ├── #44 54/60/
+│           ├── #45 55/60/
+│           ├── #46 56/60/
+│           ├── #47 57/60/
+│           ├── #48 58/60/
+│           ├── #49 59/60/
+│           └── #50 60/60/
 └── sneakers/                                 (not created yet — pending)
 ```
 
@@ -322,14 +322,14 @@ Summary (2026-11-11):
 | casualyn (53 files) | casualyn | 15 Balenciaga designs, real names in REPLACEMENTS log | DELETED 2026-11-08 — all 53 photos trashed (DHGate-sourced, incl. the 15 real replacements; restorable from trash) |
 | museround27 (6 files) | museround27 | Louis Vuitton monogram crewneck sweatshirts | DELETED 2026-11-08 — all 6 cropped DHGate screenshots trashed |
 | Sneakers (DHGate Track trainers) | TBD | Balenciaga Track trainers | Blocked — DHGate page unreadable (see below) |
-| Option 53/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + pouch in Drive; DHGate color + price TBD |
-| Option 54/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + angle in Drive; DHGate color + price TBD |
-| Option 55/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + angle in Drive; DHGate color + price TBD |
-| Option 56/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + pouch in Drive; DHGate color + price TBD |
-| Option 57/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + pouch in Drive; DHGate color + price TBD |
-| Option 58/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + side in Drive; DHGate color + price TBD |
-| Option 59/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + back in Drive; DHGate color + price TBD |
-| Option 60/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + side in Drive; DHGate color + price TBD |
+| #43 53/60 | kedaya1 | Louis Vuitton Neverfull MM | Done — front + pouch in Drive; DHGate color #43, $18.67 |
+| #44 54/60 | kedaya1 | Louis Vuitton Neverfull MM | Done — front + angle in Drive; DHGate color #44, $21.23 |
+| #45 55/60 | kedaya1 | Louis Vuitton Neverfull MM | Done — front + angle in Drive; DHGate color #45, $21.23 |
+| #46 56/60 | kedaya1 | Louis Vuitton Neverfull MM | Done — front + pouch in Drive; DHGate color #46, $21.23 |
+| #47 57/60 | kedaya1 | Louis Vuitton Neverfull MM | Done — front + pouch in Drive; DHGate color #47, $21.23 |
+| #48 58/60 | kedaya1 | Louis Vuitton Neverfull MM | Done — front + side in Drive; DHGate color #48, $21.23 |
+| #49 59/60 | kedaya1 | Louis Vuitton Neverfull MM | Done — front + back in Drive; DHGate color #49, $21.23 |
+| #50 60/60 | kedaya1 | Louis Vuitton Neverfull MM | Done — front + side in Drive; DHGate color #50, $21.23 |
 | Purple Brand, YUPOO | thomamiri | Purple Brand jeans | PAUSED by Robert — 399 picks selected, not yet downloaded |
 
 Notes:
@@ -349,7 +349,7 @@ Notes:
   page (store name + color options).
 - **Black 11/100:** link found — Reversible listing (link in the tracker sheet), brand new, size JP 1. Photos still pending: Reversible blocks direct reads (Cloudflare) and the browser could not load the page. Needs the first 2 photos as screenshots, or the link opened in the live browser.
 - **Olive 40/100 real name:** not yet identified.
-- **kedaya1 Neverfull MM options 53–60 (US Stock):** photos + tracker rows done 2026-11-11. DHGate color identifier + per-option price still TBD for all 8 — needs a browser read of the DHGate listing (click each option, select a size). Do not guess. The 8 are one website listing (Louis Vuitton Neverfull MM), told apart by canvas + pouch color. **Handbags is a new Drive category (2026-11-11)** — the website nav does not have a Handbags category yet; flag to the site builder when it matters.
+- **kedaya1 Neverfull MM options 53–60 (US Stock):** photos + tracker rows done 2026-11-11. DHGate color identifiers + prices confirmed by browser read 2026-11-12: #43 $18.67, #44–#50 $21.23 each (+ $14 shipping). The 8 are one website listing (Louis Vuitton Neverfull MM), told apart by canvas + pouch color. **Handbags is a new Drive category (2026-11-11)** — the website nav does not have a Handbags category yet; flag to the site builder when it matters.
 - **Black 10/29 real name:** working title only (Balenciaga BB Logo Crewneck Sweatshirt), not verified against a retailer listing. Front photo only — no back photo was provided.
 
 ## How to add a new item
