@@ -6,7 +6,7 @@ every photo lives, and — most importantly — which name to show customers vs.
 which name to use when an order needs to be placed with the supplier.
 
 Owner: Robert Anthony Parnell. GitHub: `bjparnell1-lang`.
-Last updated: 2026-11-08.
+Last updated: 2026-11-11.
 
 **Agent handoff:** the step-by-step playbook for the agent doing the
 sourcing and filing (reverse image search, reading store/label/
@@ -225,6 +225,17 @@ designer clothing/
 │   └── Purple Brand/                         (YUPOO drop — PAUSED, see below)
 ├── outerwear/
 ├── tracksuits/
+├── handbags/
+│   └── Louis Vuitton/
+│       └── kedaya1/                          (STORE — DHGate store; NEW 2026-11-11)
+│           ├── Option 53/60 (source color unconfirmed)/
+│           ├── Option 54/60 (source color unconfirmed)/
+│           ├── Option 55/60 (source color unconfirmed)/
+│           ├── Option 56/60 (source color unconfirmed)/
+│           ├── Option 57/60 (source color unconfirmed)/
+│           ├── Option 58/60 (source color unconfirmed)/
+│           ├── Option 59/60 (source color unconfirmed)/
+│           └── Option 60/60 (source color unconfirmed)/
 └── sneakers/                                 (not created yet — pending)
 ```
 
@@ -297,7 +308,7 @@ Folder rules:
 ## Current items
 
 See `catalog.json` / `catalog.csv` and the tracker sheet for the full data.
-Summary (2026-11-09):
+Summary (2026-11-11):
 
 | Source label | Store | Real product name | Status |
 |---|---|---|---|
@@ -311,6 +322,14 @@ Summary (2026-11-09):
 | casualyn (53 files) | casualyn | 15 Balenciaga designs, real names in REPLACEMENTS log | DELETED 2026-11-08 — all 53 photos trashed (DHGate-sourced, incl. the 15 real replacements; restorable from trash) |
 | museround27 (6 files) | museround27 | Louis Vuitton monogram crewneck sweatshirts | DELETED 2026-11-08 — all 6 cropped DHGate screenshots trashed |
 | Sneakers (DHGate Track trainers) | TBD | Balenciaga Track trainers | Blocked — DHGate page unreadable (see below) |
+| Option 53/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + pouch in Drive; DHGate color + price TBD |
+| Option 54/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + angle in Drive; DHGate color + price TBD |
+| Option 55/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + angle in Drive; DHGate color + price TBD |
+| Option 56/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + pouch in Drive; DHGate color + price TBD |
+| Option 57/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + pouch in Drive; DHGate color + price TBD |
+| Option 58/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + side in Drive; DHGate color + price TBD |
+| Option 59/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + back in Drive; DHGate color + price TBD |
+| Option 60/60 (source color unconfirmed) | kedaya1 | Louis Vuitton Neverfull MM | Done — front + side in Drive; DHGate color + price TBD |
 | Purple Brand, YUPOO | thomamiri | Purple Brand jeans | PAUSED by Robert — 399 picks selected, not yet downloaded |
 
 Notes:
@@ -330,6 +349,7 @@ Notes:
   page (store name + color options).
 - **Black 11/100:** link found — Reversible listing (link in the tracker sheet), brand new, size JP 1. Photos still pending: Reversible blocks direct reads (Cloudflare) and the browser could not load the page. Needs the first 2 photos as screenshots, or the link opened in the live browser.
 - **Olive 40/100 real name:** not yet identified.
+- **kedaya1 Neverfull MM options 53–60 (US Stock):** photos + tracker rows done 2026-11-11. DHGate color identifier + per-option price still TBD for all 8 — needs a browser read of the DHGate listing (click each option, select a size). Do not guess. The 8 are one website listing (Louis Vuitton Neverfull MM), told apart by canvas + pouch color. **Handbags is a new Drive category (2026-11-11)** — the website nav does not have a Handbags category yet; flag to the site builder when it matters.
 - **Black 10/29 real name:** working title only (Balenciaga BB Logo Crewneck Sweatshirt), not verified against a retailer listing. Front photo only — no back photo was provided.
 
 ## How to add a new item
