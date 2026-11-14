@@ -4,11 +4,32 @@ This file is the operating manual for the agent who takes over this
 catalog from here. It tells you exactly what Robert sends, what to do
 with it, and how to file it — so the work comes out the same way it did
 before. The website builder reads `README.md`; this file is for the
-agent doing the sourcing and filing. Last updated: 2026-11-10.
+agent doing the sourcing and filing. Last updated: 2026-11-14.
 
 Architecture: this repo holds instructions and status only. All links
 and IDs live in Google Workspace (Drive folders and Sheets) — never
 copy them here. Find every file, folder, and sheet by name.
+
+## Shareable clean copy — Balenciaga (2026-11-14)
+
+Robert sometimes has someone look at the Drive, and the working folders
+must not show supplier store names or DHGate numbering headers. For
+Balenciaga there is a separate shareable copy: a top-level Drive folder
+named `Balenciaga` (My Drive root, NOT inside `designer clothing`). It
+is a copy of `designer clothing > hoodies > Balenciaga` with the same
+structure, except:
+
+- Store folders use code names, never the real store: casualyn =
+  Pebble, damai2023 = Meadow, hzqsq901208 = Summit, xiaobaie =
+  Glacier.
+- Pictures that show the numbering at the top (a DHGate screenshot
+  header like `Color (9/100)`) are NOT copied. The two such pictures
+  in the working copy are the `DO-NOT-USE-SUPPLIER-REFERENCE-*.png`
+  files — leave them in the working copy only.
+- Nothing in the working copy is moved, renamed, or deleted to make
+  the shareable copy — it is a copy, the originals stay as they are.
+- If Robert asks for the same treatment for another brand, build that
+  brand's clean copy the same way and record its location here.
 
 ## Work queue — where your assignments come from
 
