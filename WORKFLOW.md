@@ -1,19 +1,5 @@
 # Catalog Workflow — Agent Takeover Playbook
 
-## Current standing instructions (override older queue directions below)
-
-- **AI recolor with per-case review:** When a color lacks a usable real photo but another color of the exact same style has a suitable reverse-image-sourced real photo, show Robert every proposed case, including links to the missing option's supplier screenshot and the original real base photo. Obtain his approval of that base for each case before generating any recolor. His approval of one image does not authorize the other cases. Preserve the garment design, branding, details and realistic lighting, match the target visible color, and inspect the result against the supplier reference; flag details that cannot be verified. Record the base photo, its original photo source, target option, AI origin and approval in the Product Cross-Reference. Name usable approved results `<label>-front-AI-recolor.png` (or corresponding view), retaining the full option number; the tag identifies an AI recolor of a reverse-image-sourced base, not a separately sourced real-color photograph. Place the supplier reference copy in its folder under the existing DO-NOT-USE rule. If Robert rejects a base, look for the actual target color using the established Apify actor; if unavailable or unsuccessful, use an available browser for visual search. Never claim browser or actor access that is unavailable; report the blocker. Do not recolor until Robert approves the particular case. The approved damai2023 white 9/100 recolor is an exception already authorized by Robert.
-- **Supplier screenshot comparison copy (standing rule):** Starting now, copy the exact DHGate/source screenshot used to match each product option into EACH photo-source subfolder under that option (both source folders when two are found; the one folder when only one is found). Preserve the original in Pending Pictures and preserve visible option numbering. Name each copy `DO-NOT-USE-SUPPLIER-REFERENCE-<option-number>.<extension>`. These copies are reference-only: never use them as public catalog, display, gallery, or photo-source images. Identify reference files separately from usable photos in the Product Cross-Reference, and verify the copy exists in each source folder. If the exact screenshot is unavailable, flag it; never substitute another option.
-- The Sourcing Queue is read-only: use it to identify assignments and groupings, but do not change its rows or statuses. Maintain the Product Cross-Reference as the source of truth for both ordering and public-facing data.
-- Aim for two distinct usable photo sources per product option. File each source's matching photos in its own source-named subfolder inside that option's folder. One good matching front from one source is sufficient when another source cannot be found within the limits below; do not block the item for a second source.
-- Drive path: `designer clothing/<category>/<brand>/<supplier store>/<source color and option number>/<photo source>/`. If the supplier color is unknown, identify the option number and mark the color unconfirmed instead of guessing. Keep source ordering links separate from photo reference links in the Product Cross-Reference.
-- When Robert colors one of the photo-source folders green, use that source's photos for the public product; disregard gray alternatives for publication. A file comment containing `display` identifies the public display image. Check actual Drive folder colors and file comments before selecting or publishing; if these cannot be read or no selection is marked, report that rather than guessing.
-- Group options with the same design into one public listing as different colors, per Robert's standing instruction; preserve a separate ordering record for every variant. Confirm design and color visually and flag uncertain matches.
-- Temporarily exclude Louis Vuitton items in Pending Pictures while another agent is handling them. Do not source, modify, or file those items until Robert changes this instruction.
-- One good, visually matching front photo is sufficient. Include a matching back or nonredundant extra angles when readily available; do not hold the item for a back. Robert's specific per-item instructions override this rule.
-- Once a good matching front is found, spend at most three minutes of additional Apify search and review looking for a back photo or second photo set, then file what is usable and move on. When looking for a second photo source, also stop after reviewing 20 results; whichever limit comes first applies. These limits do not cut off the search for the initial usable front.
-- Track actual time per product option going forward: active time to find and visually verify a usable front; additional time looking for a back or second set; and time downloading, filing, and updating the cross-reference. Record total active time, search method or actor, outcome, and significant waiting or interruptions separately in the Product Cross-Reference notes or another appropriate existing tracking record, never in the read-only Sourcing Queue. Do not invent earlier timings; report measured averages and sample sizes when asked.
-
 This file is the operating manual for the agent who takes over this
 catalog from here. It tells you exactly what Robert sends, what to do
 with it, and how to file it — so the work comes out the same way it did
@@ -118,9 +104,13 @@ position in the order he attached them (left to right as he sees them).
 You receive them in the same left-to-right order. Example: "the photos
 I want you to use is 3 and 4" means the 3rd and 4th attachments.
 
-**Photo count per item (updated 2026-11-11):** One good matching front
-is enough. Add a back or other nonredundant views within the standing
-search limits above. Robert's specific per-item instruction overrides.
+**Photo count per item (global rule, set 2026-11-09): 3 photos per
+product at least** — front, back, and one more angle. If a source has
+different angles of the garment, include them only if they are not
+redundant or repetitive. If you cannot get 3 photos, 2 is fine. If you
+cannot get 2, 1 is fine. His per-item instruction overrides this
+("use all photos" for LightPink 41/100, "use the first 3 photos" for
+Black 11/81).
 
 ## Step 1 — Read the drop: store, color, numbering
 
@@ -129,7 +119,14 @@ them from the pics.
 
 - **Store name** — the DHGate store shown on the store/reviews page
   (e.g. `hzqsq901208`, `damai2023`, `xiaobaie`). The folder directly
-  under each brand folder IS the store name.
+  under each brand folder IS the store name. **Exception (2026-11-14):
+  the four Balenciaga (hoodies) store folders were renamed to code
+  names so people browsing Drive cannot tell the supplier:
+  `casualyn` = `Pebble`, `damai2023` = `Meadow`, `hzqsq901208` =
+  `Summit`, `xiaobaie` = `Glacier`. The `store` field still carries the
+  real store name; use it with this mapping. Do not re-create folders
+  under the real store names. New stores still file under their real
+  store name unless Robert says otherwise.**
 - **Color identifier** — the color word (e.g. `Black`, `LightPink`).
   The store's color word often does NOT describe the garment (the
   "Green 12/100" garment is black). File under his label exactly as
@@ -210,8 +207,7 @@ The real photo must show the **full brand name, unedited** — never a
 version with the name blocked out or edited out, and never a version
 where a letter has been changed or the brand made to look different
 (e.g. "balen" instead of "Balenciaga"). Search for that same exact
-design until you find a good, unedited matching front. A back is optional
-and subject to the standing search limits.
+design until you find the real, unedited version — front and back.
 Product-only images: never whole webpages, listing UI, review text, or
 add-to-cart elements. Include the **back view** when the listing shows
 one (t-shirts, hoodies); skip it when it doesn't make sense (socks).
@@ -484,9 +480,10 @@ Update all three files, then commit them together:
 8. **When Robert corrects you, record the reason** — in the tracker
    notes, the catalog notes, and this file — so the correction never
    has to be made twice. (Example: the hzqsq901208 2-place lag.)
-9. **Photo count (updated 2026-11-11).** One good matching front is
-   enough. A back or another photo set is optional; follow the three-minute
-   and 20-result limits above. Robert's per-item instruction overrides.
+9. **Photo count (global rule, 2026-11-09).** 3 photos per product at
+   least; extra angles only if they are not redundant or repetitive;
+   2 if 3 is not possible, 1 if 2 is not possible. Robert's per-item
+   instruction overrides.
 10. **File names may vary; the folder must match (global rule,
     2026-11-09).** File names can be different versions of the file
     name so they do not duplicate; the folder name must be the closest
