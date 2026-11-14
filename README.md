@@ -59,6 +59,8 @@ color is the name customers see. Never confuse the two.
 
 ## Listings — one item, several colors
 
+**Shipping:** Show the applicable verified delivery estimate for the customer's selected variant and destination. Warehouse, supplier cost and sourcing identifiers stay in the back end. The Product Cross-Reference records origin, destination, estimate, verification date, and supplier item price + shipping = total, with shipping second; supplier cost is separate from public retail price. See [WORKFLOW.md](WORKFLOW.md#match-the-gallery-number-to-the-supplier-color-and-warehouse).
+
 When the same real product comes in different colors, it is ONE listing
 on the website — not one listing per color. The items are different
 numbers on the source side (different DHGate option numbers, e.g. 11/100
