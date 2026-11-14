@@ -165,6 +165,10 @@ them from the pics.
     frequently mismatches the label word.
   - `xiaobaie`: 81 options (`/81`); its DHGate share link is in the
     tracker sheet.
+  - `top_source` (Moose Knuckles, outerwear, 69 options): the size
+    view reorders — US-stock options come first (green tag). For this
+    store the US block is 13–36, so the grid starts at 13/69. See the
+    size-click rule below — 13–36 is this store only.
 
 If the numbering is ambiguous (e.g. the color name and the position
 disagree), pick the position, file it, and **flag the discrepancy to
@@ -194,6 +198,79 @@ know you have the right one:
    identifier. Record it in the tracker and the catalog.
 4. If the numbering and the color do not line up, stop and flag it to
    Robert — do not guess.
+
+## Finding the color identifier and the warehouse — the size-click rule (2026-11-14)
+
+On a DHGate listing there are TWO views, and they do not show the
+options in the same order. Confusing them is the easiest way to file
+the wrong color or the wrong warehouse. Learn the principle once and
+apply it to every store.
+
+**The principle: the picture order is the numbering, always.**
+
+- Before you click a size, you can swipe through the listing's
+  pictures in order: 1 of N, 2 of N, all the way to N of N. That
+  picture order IS the numbering. It never changes, whatever the size
+  view does.
+- When you click a size, a GRID of pictures appears — and the grid is
+  REORDERED: the US-stock options come first. The grid order is NOT
+  the numbering. Never read a number off a grid position.
+
+**One click gives you two answers: the color identifier and the
+warehouse.**
+
+- **Color identifier:** the color that shows for an option after you
+  click a size IS the color identifier. That is the only way to find
+  it when Robert did not give it (Step 1 above).
+- **Warehouse:** in the size view, a small green tag on an option
+  photo means USA shipping. Check EVERY option — a listing can be
+  all USA, all China, or mixed; never assume from one option.
+- **Record the warehouse for every product** in the tracker sheet
+  (Product Cross-Reference), back end ONLY. The warehouse itself is
+  NEVER public-facing. What the public sees is only the shipping
+  time: USA warehouse = 7 to 9 days, China warehouse = 15 to 20
+  days.
+- **If a warehouse cannot be determined** from the page, say so in
+  the tracker Notes — do not guess.
+
+**The picture-match safety rule — do this before you take any
+information from the size view.**
+
+- The picture in the size grid MUST be the same coat as the picture
+  in the numbering view (the picture you started from). Compare
+  them first. Only once the pictures match do you take the color
+  identifier and the warehouse from that option.
+- If the pictures do not match, stop and flag it to Robert — do not
+  guess, and do not take the color or warehouse from a picture that
+  is not the same coat. Matching pictures is how we stay sure.
+
+**How to navigate the grid (your thought process).**
+
+1. Open the DHGate link. Note the picture-order number of the coat
+   you are working on (e.g. 1/69).
+2. Click a size. The grid appears.
+3. Scan the grid for green tags to spot the US-stock block. It is
+   usually first — but not guaranteed (see the flag rule below).
+4. Find YOUR coat's picture in the grid by matching the picture,
+   not the position. A coat that is not US stock sits right after
+   the US block.
+5. Once the picture matches, read the color identifier and the
+   warehouse (green tag or not) from that option. Record both.
+
+**Worked example — top_source, Moose Knuckles, outerwear, 69
+options.** The picture view runs 1 of 69 to 69 of 69. 1/69 is the
+all-black coat. Click a size and the grid starts at 13/69: the US
+block is 13 through 36 (24 coats). 1/69 is NOT US stock, so in the
+grid it sits right after the US block — the first option after 36.
+13/69 IS US stock, so it is first in the grid — it is NOT in grid
+position 13. **13 through 36 is this store's US range only.** On
+another store, apply the same principle with whatever that store's
+US range is; never carry 13–36 to another store.
+
+**Flag rule.** US stock is usually first in the size view, most of
+the time — but if you ever see a US-stock option that is NOT first
+in the grid, tell Robert so he can update the rule. Some listings
+have no US stock at all; then the grid runs in picture order.
 
 ## Step 2 — Get the real photo (reverse image search first)
 
@@ -570,6 +647,17 @@ Update all three files, then commit them together:
     (Step 3) — never leave it to be guessed. Read the whole row,
     including Notes, before starting; never work from the numbering
     alone.
+19. **Size-click rule: picture order is the numbering; the grid is
+    reordered (2026-11-14).** On DHGate, the picture/swipe order is
+    the numbering and never changes; the size-view grid puts US-stock
+    options first and is NOT the numbering. One size click gives both
+    the color identifier and the warehouse (green tag = USA). Record
+    the warehouse (USA/China) in the tracker, back end only; the
+    public side shows only the shipping time (USA 7-9 days, China
+    15-20 days). Before taking any information from the size view,
+    check the picture in the grid matches the picture in the
+    numbering view. If US stock is ever not first in a grid, tell
+    Robert.
 
 ## Current state (2026-11-08)
 
@@ -602,6 +690,11 @@ Update all three files, then commit them together:
   (working titles in use); DHGate ordering links still missing for
   the four damai2023 items (Green 12/100, Olive 40/100, LightPink
   41/100, Black 11/100).
+- **New store (2026-11-14):** top_source — Moose Knuckles outerwear,
+  69 options. Screenshots and the DHGate link still to come from
+  Robert; the size-click rule above was written for this store. The
+  store files under `outerwear > Moose Knuckles > top_source` when
+  the work starts.
 - **Deleted, do not restore without asking:** all 53 `casualyn`
   files and all 6 `museround27` files were trashed 2026-11-08
   (DHGate-sourced). The 15 authentic casualyn replacements are in
