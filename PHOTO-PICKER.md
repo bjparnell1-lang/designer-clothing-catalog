@@ -53,7 +53,7 @@ After the owner connects Google:
 
 Central saving and discovery do **not** automatically publish photos to the public storefront and do not change Drive comments or folder colors. Those are separate actions requiring the reviewed selection data. Keep source labels, supplier names, ordering links, warehouse and costs out of the public catalog.
 
-Vercel Authentication protects the picker, settings, API routes and images. Keep it enabled on every serving URL. Do not add an unprotected custom domain or weaken protection to make tests pass. Private Blob stores hold previews, the catalog, decisions and encrypted connection data. Credentials stay server-side and outside both GitHub repositories.
+Vercel Authentication protects the picker, settings, API routes and images. The required Vercel project setting is **`ssoProtection.deploymentType = all`**. Do not use `all_except_custom_domains`: the default left the production alias open during testing and was corrected before handoff. Anonymous catalog, setup and image requests were then verified to redirect to Vercel sign-in. Keep protection enabled on every serving URL. Do not add an unprotected custom domain or weaken protection to make tests pass. Private Blob stores hold previews, the catalog, decisions and encrypted connection data. Credentials stay server-side and outside both GitHub repositories.
 
 Runtime source is under `photo-picker/` on `homegrown`'s `photo-picker-backend` branch; it is separate from the storefront production branch. Deploy that directory to the `designer-depot-picker` Vercel project with `public/` output and its `vercel.json`. This instructions repository stays focused on process and status.
 
