@@ -6,8 +6,8 @@ Updated 2026-11-15. Owner-requested process reference for future catalog and sto
 
 | Resource | Location |
 | --- | --- |
-| Private picker and central-save backend | https://designer-depot-picker.vercel.app |
-| Private Google connection settings | https://designer-depot-picker.vercel.app/setup.html |
+| Public photo picker (read-only) | https://designer-depot-picker.vercel.app |
+| Protected owner Google settings | https://designer-depot-picker.vercel.app/setup.html |
 | Source Drive root — designer clothing | https://drive.google.com/drive/folders/1elDDNrJSAvRaQrks5lQX7Zio2IBBGQCW |
 | Excluded subtree — Pending Pictures | https://drive.google.com/drive/folders/1K2pKeMjEGkn_eqgaCd46WILnYXnLWpib |
 | Backend/frontend implementation | https://github.com/bjparnell1-lang/homegrown/tree/photo-picker-backend/photo-picker |
@@ -19,7 +19,7 @@ The Product Cross-Reference and Sourcing Queue remain Google Sheets inside desig
 
 ## Activation status
 
-The Vercel application and private persistent storage are deployed. The baseline catalog contains 226 product/color entries, 49 with two photo sources, and 1,408 thumbnail previews; 109 supplier-reference images were excluded. This is a dated starting inventory, not a permanent count.
+The Vercel application and private persistent storage are deployed. Robert approved public browsing on the production URL; shared saving and Google settings remain in the authenticated owner view. The baseline catalog contains 226 product/color entries, 49 with two photo sources, and 1,408 thumbnail previews; 109 supplier-reference images were excluded. This is a dated starting inventory, not a permanent count.
 
 **Google Drive is not connected to the deployed backend yet.** The owner must complete the protected settings page once. Until then, the picker can save its existing selections centrally, but it cannot discover future Drive arrivals. Do not claim unattended Drive sync is active before `/api/connection` reports connected and a successful refresh appears in the picker.
 
@@ -37,13 +37,13 @@ After the owner connects Google:
 6. Image requests recheck current Drive ancestry once connected, so an image moved into Pending Pictures is not served simply because an older snapshot included it.
 7. A failed scan keeps the last successful catalog and existing choices. It must not replace the catalog with an empty or partially fetched result.
 
-**Cadence:** the current Vercel Hobby plan permits a daily background check, configured around 06:00 UTC. While the picker is visible it checks every two hours. Refresh Drive requests a check immediately. This is scheduled discovery, not an instant Google Drive webhook. A 15-minute Vercel background schedule was rejected by Hobby limits; upgrading scheduling is separate from the current setup.
+**Cadence:** the current Vercel Hobby plan permits a daily background check, configured around 06:00 UTC. While the owner view is visible it checks Drive every two hours. The public view refreshes the saved catalog every two hours without triggering Drive scans. Refresh Drive in the owner view requests a check immediately. This is scheduled discovery, not an instant Google Drive webhook. A 15-minute Vercel background schedule was rejected by Hobby limits; upgrading scheduling is separate from the current setup.
 
 ## Selecting and saving
 
 - Two source folders open side by side through Compare both. Each photo can be included independently; combining photos from both sources is supported.
 - Each product/color has exactly one display photo, which must also be included. Selecting display automatically includes it.
-- Choices save centrally in private Vercel Blob storage and are available on other devices after Vercel sign-in.
+- Owner choices save centrally in private Vercel Blob storage and are available on other devices through the Owner login link. Public visitors can view and compare photos but cannot change shared selections.
 - Saves use revision/ETag concurrency checks. If another session saved first, the picker preserves the local draft and offers retry/merge instead of silently overwriting it.
 - Browser backups can be restored explicitly after a save failure or reload. Export/import JSON remains available for backup and for moving choices from the earlier Sites picker. Older Sites browser storage is on a different origin; export from that picker and import into the Vercel picker.
 - Mark a product Reviewed when finished. Exported applicable changes include reviewed entries only; unfinished selections remain drafts.
@@ -53,7 +53,13 @@ After the owner connects Google:
 
 Central saving and discovery do **not** automatically publish photos to the public storefront and do not change Drive comments or folder colors. Those are separate actions requiring the reviewed selection data. Keep source labels, supplier names, ordering links, warehouse and costs out of the public catalog.
 
-Vercel Authentication protects the picker, settings, API routes and images. The required Vercel project setting is **`ssoProtection.deploymentType = all`**. Do not use `all_except_custom_domains`: the default left the production alias open during testing and was corrected before handoff. Anonymous catalog, setup and image requests were then verified to redirect to Vercel sign-in. Keep protection enabled on every serving URL. Do not add an unprotected custom domain or weaken protection to make tests pass. Private Blob stores hold previews, the catalog, decisions and encrypted connection data. Credentials stay server-side and outside both GitHub repositories.
+The production aliases are **public read-only views**, as approved by Robert. They show photos and existing selections without requiring login. Shared saves, manual Drive refreshes, and Google connection settings remain private.
+
+The required Vercel setting is **`ssoProtection.deploymentType = all_except_custom_domains`** together with the application owner-host guards. This intentionally makes production aliases public while keeping unique deployment URLs behind Vercel Authentication. Never disable SSO entirely. The Owner login link targets the current server-owned unique deployment URL. All mutations and private connection reads require both the request URL hostname and Host to match `VERCEL_URL`. `/setup.html` redirects the public alias to the protected owner URL. Cron uses its independent secret.
+
+Do not use this setting with the older backend that relied entirely on all-URL protection: deploy the owner-host guards first, then change the Vercel setting. Verify that anonymous public page/catalog/image reads succeed, public and spoofed-forwarded-header writes fail, and unique owner URLs still require Vercel login. Restore all-URL protection if any test fails.
+
+Private Blob storage still holds previews, catalog data, decisions and encrypted connection data. Credentials never enter public responses or either GitHub repository. Pending Pictures remains excluded.
 
 Runtime source is under `photo-picker/` on `homegrown`'s `photo-picker-backend` branch; it is separate from the storefront production branch. Deploy that directory to the `designer-depot-picker` Vercel project with `public/` output and its `vercel.json`. This instructions repository stays focused on process and status.
 

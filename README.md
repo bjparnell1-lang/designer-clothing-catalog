@@ -14,7 +14,7 @@ numbering from Robert's drops, Drive + tracker + catalog updates) is
 in [`WORKFLOW.md`](WORKFLOW.md). The website builder reads this
 README; the sourcing agent follows WORKFLOW.md.
 
-**Photo selection and automatic discovery:** read [`PHOTO-PICKER.md`](PHOTO-PICKER.md). It records the private Vercel picker, backend source, current Google connection status, automatic/refresh schedules, and the permanent Pending Pictures exclusion.
+**Photo selection and automatic discovery:** read [`PHOTO-PICKER.md`](PHOTO-PICKER.md). It records the public Vercel picker, protected owner editing, backend source, current Google connection status, automatic/refresh schedules, and the permanent Pending Pictures exclusion.
 
 ## Where everything lives
 
@@ -24,7 +24,7 @@ README; the sourcing agent follows WORKFLOW.md.
   Google Sheet "Designer Catalog - Product Cross-Reference",
   inside the `designer clothing` Drive folder. Open it by name.
 - **Public storefront:** https://streetwear-site.vercel.app — source in `bjparnell1-lang/homegrown`.
-- **Private photo picker:** https://designer-depot-picker.vercel.app — centrally saves selections and discovers allowed Drive photos after the owner connects Google. See [`PHOTO-PICKER.md`](PHOTO-PICKER.md) before importing or publishing any images. Mirror eligible categories on the storefront only when publication is requested.
+- **Photo picker (public viewing; protected owner editing):** https://designer-depot-picker.vercel.app — centrally saves selections and discovers allowed Drive photos after the owner connects Google. See [`PHOTO-PICKER.md`](PHOTO-PICKER.md) before importing or publishing any images. Mirror eligible categories on the storefront only when publication is requested.
 
 This repo holds instructions and status only. Supplier ordering and photo-reference links remain in Google Workspace (Drive folders and Sheets). At Robert's request, infrastructure links and the root/exclusion folder IDs for the photo-picker process are documented in [`PHOTO-PICKER.md`](PHOTO-PICKER.md). Never put credentials, private key files, or supplier ordering links in this repository.
 

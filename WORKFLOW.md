@@ -82,7 +82,7 @@ told in chat; check the sheet.
 
 ## Photo picker — discovery and selections
 
-Read [`PHOTO-PICKER.md`](PHOTO-PICKER.md) before importing website images or changing the connected picker. File newly finished photos in the normal catalog tree; after Google connection, the backend discovers them on its documented schedule or Refresh Drive. Do not duplicate files just to trigger discovery.
+Read [`PHOTO-PICKER.md`](PHOTO-PICKER.md) before importing website images or changing the connected picker. The production picker is publicly viewable; use Owner login for shared saves, Drive refresh and Google settings. File newly finished photos in the normal catalog tree; after Google connection, the backend discovers them on its documented schedule or Refresh Drive. Do not duplicate files just to trigger discovery.
 
 Pending Pictures and all descendants are **permanently excluded from this discovery flow**. Do not push pending screenshots into the picker. Supplier-reference `DO-NOT-USE` files remain excluded everywhere. New photos start unselected, and modified product entries require review again. The picker's reviewed, per-file choices can combine both photo sources; folder color alone is insufficient to determine the selected gallery. Central saving does not itself publish the storefront or write Drive comments/colors.
 
