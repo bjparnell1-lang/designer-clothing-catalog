@@ -37,7 +37,7 @@ After the owner connects Google:
 6. Image requests recheck current Drive ancestry once connected, so an image moved into Pending Pictures is not served simply because an older snapshot included it.
 7. A failed scan keeps the last successful catalog and existing choices. It must not replace the catalog with an empty or partially fetched result.
 
-**Cadence:** the current Vercel Hobby plan permits a daily background check, configured around 06:00 UTC. While the picker is visible it checks every two minutes. Refresh Drive requests a check immediately. This is scheduled discovery, not an instant Google Drive webhook. A 15-minute Vercel background schedule was rejected by Hobby limits; upgrading scheduling is separate from the current setup.
+**Cadence:** the current Vercel Hobby plan permits a daily background check, configured around 06:00 UTC. While the picker is visible it checks every two hours. Refresh Drive requests a check immediately. This is scheduled discovery, not an instant Google Drive webhook. A 15-minute Vercel background schedule was rejected by Hobby limits; upgrading scheduling is separate from the current setup.
 
 ## Selecting and saving
 
