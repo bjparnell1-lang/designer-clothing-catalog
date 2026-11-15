@@ -1,18 +1,20 @@
 # Designer Clothing Catalog — Website Handoff
 
 This repo is the handoff for building the designer clothing catalog website
-(ChatGPT Sites). It tells the website builder everything the catalog is, where
+(Designer Depot; storefront on Vercel). It tells the website builder everything the catalog is, where
 every photo lives, and — most importantly — which name to show customers vs.
 which name to use when an order needs to be placed with the supplier.
 
 Owner: Robert Anthony Parnell. GitHub: `bjparnell1-lang`.
-Last updated: 2026-11-11.
+Last updated: 2026-11-15.
 
 **Agent handoff:** the step-by-step playbook for the agent doing the
 sourcing and filing (reverse image search, reading store/label/
 numbering from Robert's drops, Drive + tracker + catalog updates) is
 in [`WORKFLOW.md`](WORKFLOW.md). The website builder reads this
 README; the sourcing agent follows WORKFLOW.md.
+
+**Photo selection and automatic discovery:** read [`PHOTO-PICKER.md`](PHOTO-PICKER.md). It records the private Vercel picker, backend source, current Google connection status, automatic/refresh schedules, and the permanent Pending Pictures exclusion.
 
 ## Where everything lives
 
@@ -21,14 +23,10 @@ README; the sourcing agent follows WORKFLOW.md.
 - **Cross-reference tracker (source of truth for names and links):**
   Google Sheet "Designer Catalog - Product Cross-Reference",
   inside the `designer clothing` Drive folder. Open it by name.
-- **Website (ChatGPT Sites):** the site is built in ChatGPT Sites
-  from this repo. Keep the Drive structure in sync with the site's
-  categories (Jeans, Outerwear, Hoodies, Tracksuits); new folders
-  get mirrored on the site.
+- **Public storefront:** https://streetwear-site.vercel.app — source in `bjparnell1-lang/homegrown`.
+- **Private photo picker:** https://designer-depot-picker.vercel.app — centrally saves selections and discovers allowed Drive photos after the owner connects Google. See [`PHOTO-PICKER.md`](PHOTO-PICKER.md) before importing or publishing any images. Mirror eligible categories on the storefront only when publication is requested.
 
-This repo holds instructions and status only. All links and IDs live
-in Google Workspace (Drive folders and Sheets) — find things by name;
-never copy an ID or a link into this repo.
+This repo holds instructions and status only. Supplier ordering and photo-reference links remain in Google Workspace (Drive folders and Sheets). At Robert's request, infrastructure links and the root/exclusion folder IDs for the photo-picker process are documented in [`PHOTO-PICKER.md`](PHOTO-PICKER.md). Never put credentials, private key files, or supplier ordering links in this repository.
 
 ## The two names — the key rule
 
@@ -279,13 +277,10 @@ Folder rules:
 - Aim for two distinct usable photo sources per option, each in its own
   source-named folder under the option folder. One good front from one
   source is enough when the additional search reaches the limits in
-  WORKFLOW.md. When Robert marks a source folder green, use it for the
-  website; disregard gray alternatives. A comment saying `display` on a
-  photo identifies the display image. Verify actual colors and comments.
+  WORKFLOW.md. Green source folders and existing `display` comments are legacy selection signals. The connected picker stores exact included photo IDs and one display image per product/color; it can mix photos from either or both sources. Use its reviewed selections when supplied. New photos are not auto-selected merely because their folder is green. Verify actual colors and comments; follow [`PHOTO-PICKER.md`](PHOTO-PICKER.md).
 - Group matching designs into one public listing with separate color
   variants and separate source ordering records.
-- Temporarily exclude Louis Vuitton items in Pending Pictures while
-  another agent handles them, until Robert changes that instruction.
+- **Exclude the entire Pending Pictures subtree from the picker discovery flow**, for every brand and category, including all nested folders and images. This is a standing exclusion, not just the older temporary Louis Vuitton sourcing hold. See [`PHOTO-PICKER.md`](PHOTO-PICKER.md).
 - **Photo count (global rule, 2026-11-11):** One good matching front
   is enough. Add a back or other nonredundant views when available within
   the search limits in WORKFLOW.md. Once a good front is found, spend at

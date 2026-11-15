@@ -4,11 +4,9 @@ This file is the operating manual for the agent who takes over this
 catalog from here. It tells you exactly what Robert sends, what to do
 with it, and how to file it — so the work comes out the same way it did
 before. The website builder reads `README.md`; this file is for the
-agent doing the sourcing and filing. Last updated: 2026-11-14.
+agent doing the sourcing and filing. Last updated: 2026-11-15.
 
-Architecture: this repo holds instructions and status only. All links
-and IDs live in Google Workspace (Drive folders and Sheets) — never
-copy them here. Find every file, folder, and sheet by name.
+Architecture: this repo holds instructions and status only. Supplier ordering and photo-reference links stay in Google Workspace. Infrastructure links and the exact Drive root/exclusion IDs are documented in [`PHOTO-PICKER.md`](PHOTO-PICKER.md) at Robert's request. Credentials and private keys never belong in this repo. Runtime implementation lives on the separate `photo-picker-backend` branch of `homegrown`.
 
 **When updating instructions:** First find existing rules on the same subject. Revise and consolidate them so there is one clear, current instruction. Update or replace conflicting summaries and links; do not stack a new rule on top of older duplicates.
 
@@ -81,6 +79,12 @@ told in chat; check the sheet.
 - If you cannot read or write this sheet, say so plainly and work
   from the rows Robert pastes to you instead; do not claim a status
   you did not set.
+
+## Photo picker — discovery and selections
+
+Read [`PHOTO-PICKER.md`](PHOTO-PICKER.md) before importing website images or changing the connected picker. File newly finished photos in the normal catalog tree; after Google connection, the backend discovers them on its documented schedule or Refresh Drive. Do not duplicate files just to trigger discovery.
+
+Pending Pictures and all descendants are **permanently excluded from this discovery flow**. Do not push pending screenshots into the picker. Supplier-reference `DO-NOT-USE` files remain excluded everywhere. New photos start unselected, and modified product entries require review again. The picker's reviewed, per-file choices can combine both photo sources; folder color alone is insufficient to determine the selected gallery. Central saving does not itself publish the storefront or write Drive comments/colors.
 
 ## Pending Pictures — where Robert's screenshots wait
 
