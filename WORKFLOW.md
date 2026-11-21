@@ -4,11 +4,11 @@ This file is the operating manual for the agent who takes over this
 catalog from here. It tells you exactly what Robert sends, what to do
 with it, and how to file it — so the work comes out the same way it did
 before. The website builder reads `README.md`; this file is for the
-agent doing the sourcing and filing. Last updated: 2026-11-15.
+agent doing the sourcing and filing. Last updated: 2026-11-14.
 
-Architecture: this repo holds instructions and status only. Supplier ordering and photo-reference links stay in Google Workspace. Infrastructure links and the exact Drive root/exclusion IDs are documented in [`PHOTO-PICKER.md`](PHOTO-PICKER.md) at Robert's request. Credentials and private keys never belong in this repo. Runtime implementation lives on the separate `photo-picker-backend` branch of `homegrown`.
-
-**When updating instructions:** First find existing rules on the same subject. Revise and consolidate them so there is one clear, current instruction. Update or replace conflicting summaries and links; do not stack a new rule on top of older duplicates.
+Architecture: this repo holds instructions and status only. All links
+and IDs live in Google Workspace (Drive folders and Sheets) — never
+copy them here. Find every file, folder, and sheet by name.
 
 ## Shareable clean copy — Balenciaga (2026-11-14)
 
@@ -79,12 +79,6 @@ told in chat; check the sheet.
 - If you cannot read or write this sheet, say so plainly and work
   from the rows Robert pastes to you instead; do not claim a status
   you did not set.
-
-## Photo picker — discovery and selections
-
-Read [`PHOTO-PICKER.md`](PHOTO-PICKER.md) before importing website images or changing the connected picker. The production picker is publicly viewable; use Owner login for shared saves, Drive refresh and Google settings. File newly finished photos in the normal catalog tree; after Google connection, the backend discovers them on its documented schedule or Refresh Drive. Do not duplicate files just to trigger discovery.
-
-Pending Pictures and all descendants are **permanently excluded from this discovery flow**. Do not push pending screenshots into the picker. Supplier-reference `DO-NOT-USE` files remain excluded everywhere. New photos start unselected, and modified product entries require review again. The picker's reviewed, per-file choices can combine both photo sources; folder color alone is insufficient to determine the selected gallery. Central saving does not itself publish the storefront or write Drive comments/colors.
 
 ## Pending Pictures — where Robert's screenshots wait
 
@@ -171,21 +165,112 @@ them from the pics.
     frequently mismatches the label word.
   - `xiaobaie`: 81 options (`/81`); its DHGate share link is in the
     tracker sheet.
-  - `top_source` (Moose Knuckles, outerwear, 69 options): Robert reports that in this listing his size view puts US-stock gallery options 13–36 first. See the matching procedure below; do not apply this range to other listings.
+  - `top_source` (Moose Knuckles, outerwear, 69 options): the size
+    view reorders — US-stock options come first (green tag). For this
+    store the US block is 13–36, so the grid starts at 13/69. See the
+    size-click rule below — 13–36 is this store only.
 
-If the numbering or image match is ambiguous, leave it unconfirmed and flag the discrepancy to Robert. Do not assign a color based on a reordered grid position.
+If the numbering is ambiguous (e.g. the color name and the position
+disagree), pick the position, file it, and **flag the discrepancy to
+Robert in your reply** so he can correct you. When he confirms, record
+the reason (like the 2-place lag above) in the tracker notes, the
+catalog notes, and this file, so it sticks.
 
-## Match the gallery number to the supplier color and warehouse
+### Verify the product on DHGate before you search for the photo
 
-1. Identify the option by the number shown in DHGate's original image gallery, such as `3/69`. The gallery number remains the option's identifier.
-2. Select an available clothing size—such as S, M, L, or XL—and locate the matching product image in the color options. The size-view grid can be reordered, so **do not assume the option's grid position is its gallery number**.
-3. USA-stock options may be marked with a green tag and may appear before other options. For this Moose Knuckles listing, Robert reports that options `13–36/69` appear first in his size view. This is a listing-specific example, not a rule to apply to every store.
-4. Match the exact garment image to the numbered gallery image or Robert's numbered screenshot. Check details such as garment color, fur color and design. Select the matching thumbnail and read the supplier's color label and shipping origin. If the browser supports it, return to the gallery and confirm the number shown for the selected image.
-5. Record the gallery number, supplier color, visible product color and warehouse separately in the Product Cross-Reference. If the images are too similar to distinguish or the match cannot be confirmed, mark the mapping **unconfirmed** and tell Robert.
+Use the DHGate link (from the queue row or the tracker sheet) to open
+the store and find the product. Do this for every item — it is how you
+know you have the right one:
 
-**Verified browser example:** The numbered `3/69` screenshot matched the thumbnail whose supplier color was **Yellow**; the numbered `4/69` screenshot matched **Brown**. Both coats appear white, and their fur colors differ. These examples demonstrate why supplier color and visible color must be kept separate. The browser did not expose the gallery counter; the numbers were read from Robert's screenshots and matched visually.
+1. Use the numbering for the product you are working on (e.g. `10/29`)
+   and compare it with the numbering shown at the bottom of the picture
+   on DHGate (the option thumbnails show the number). Find the one
+   where the numbering matches.
+2. When the numbering matches, click on the product — the color should
+   show. If the color does not show, select a size, and the color
+   should come up then.
+3. If that color matches the color you are working on, you can be sure
+   it is the correct product and the correct picture. That is the
+   confirmation — do not skip it.
+   **If the color identifier was not given** (queue row blank — Robert
+   only gave store + numbering to go fast), this is also how you find
+   it: the color that shows after you click a size IS the color
+   identifier. Record it in the tracker and the catalog.
+4. If the numbering and the color do not line up, stop and flag it to
+   Robert — do not guess.
 
-**Shipping and cost:** Record the shipping origin, destination, estimated shipping time and date checked for the selected option. Show the applicable estimated shipping time on the public-facing product. Record supplier item price and shipping in one cost cell as `item price + shipping = total`, with shipping second; keep that cost separate from the public retail price. Use verified estimates and amounts for the particular variant, size and destination, not a universal time inferred solely from origin.
+## Finding the color identifier and the warehouse — the size-click rule (2026-11-14)
+
+On a DHGate listing there are TWO views, and they do not show the
+options in the same order. Confusing them is the easiest way to file
+the wrong color or the wrong warehouse. Learn the principle once and
+apply it to every store.
+
+**The principle: the picture order is the numbering, always.**
+
+- Before you click a size, you can swipe through the listing's
+  pictures in order: 1 of N, 2 of N, all the way to N of N. That
+  picture order IS the numbering. It never changes, whatever the size
+  view does.
+- When you click a size, a GRID of pictures appears — and the grid is
+  REORDERED: the US-stock options come first. The grid order is NOT
+  the numbering. Never read a number off a grid position.
+
+**One click gives you two answers: the color identifier and the
+warehouse.**
+
+- **Color identifier:** the color that shows for an option after you
+  click a size IS the color identifier. That is the only way to find
+  it when Robert did not give it (Step 1 above).
+- **Warehouse:** in the size view, a small green tag on an option
+  photo means USA shipping. Check EVERY option — a listing can be
+  all USA, all China, or mixed; never assume from one option.
+- **Record the warehouse for every product** in the tracker sheet
+  (Product Cross-Reference), back end ONLY. The warehouse itself is
+  NEVER public-facing. What the public sees is only the shipping
+  time: USA warehouse = 7 to 9 days, China warehouse = 15 to 20
+  days.
+- **If a warehouse cannot be determined** from the page, say so in
+  the tracker Notes — do not guess.
+
+**The picture-match safety rule — do this before you take any
+information from the size view.**
+
+- The picture in the size grid MUST be the same coat as the picture
+  in the numbering view (the picture you started from). Compare
+  them first. Only once the pictures match do you take the color
+  identifier and the warehouse from that option.
+- If the pictures do not match, stop and flag it to Robert — do not
+  guess, and do not take the color or warehouse from a picture that
+  is not the same coat. Matching pictures is how we stay sure.
+
+**How to navigate the grid (your thought process).**
+
+1. Open the DHGate link. Note the picture-order number of the coat
+   you are working on (e.g. 1/69).
+2. Click a size. The grid appears.
+3. Scan the grid for green tags to spot the US-stock block. It is
+   usually first — but not guaranteed (see the flag rule below).
+4. Find YOUR coat's picture in the grid by matching the picture,
+   not the position. A coat that is not US stock sits right after
+   the US block.
+5. Once the picture matches, read the color identifier and the
+   warehouse (green tag or not) from that option. Record both.
+
+**Worked example — top_source, Moose Knuckles, outerwear, 69
+options.** The picture view runs 1 of 69 to 69 of 69. 1/69 is the
+all-black coat. Click a size and the grid starts at 13/69: the US
+block is 13 through 36 (24 coats). 1/69 is NOT US stock, so in the
+grid it sits right after the US block — the first option after 36.
+13/69 IS US stock, so it is first in the grid — it is NOT in grid
+position 13. **13 through 36 is this store's US range only.** On
+another store, apply the same principle with whatever that store's
+US range is; never carry 13–36 to another store.
+
+**Flag rule.** US stock is usually first in the size view, most of
+the time — but if you ever see a US-stock option that is NOT first
+in the grid, tell Robert so he can update the rule. Some listings
+have no US stock at all; then the grid runs in picture order.
 
 ## Step 2 — Get the real photo (reverse image search first)
 
@@ -562,7 +647,64 @@ Update all three files, then commit them together:
     (Step 3) — never leave it to be guessed. Read the whole row,
     including Notes, before starting; never work from the numbering
     alone.
-19. **Size-click rule:** Follow [Match the gallery number to the supplier color and warehouse](#match-the-gallery-number-to-the-supplier-color-and-warehouse); do not infer a gallery number from a reordered grid position.
+19. **Size-click rule: picture order is the numbering; the grid is
+    reordered (2026-11-14).** On DHGate, the picture/swipe order is
+    the numbering and never changes; the size-view grid puts US-stock
+    options first and is NOT the numbering. One size click gives both
+    the color identifier and the warehouse (green tag = USA). Record
+    the warehouse (USA/China) in the tracker, back end only; the
+    public side shows only the shipping time (USA 7-9 days, China
+    15-20 days). Before taking any information from the size view,
+    check the picture in the grid matches the picture in the
+    numbering view. If US stock is ever not first in a grid, tell
+    Robert.
+
+## PandaVault — a second supplier source (2026-11-21)
+
+PandaVault is a supplier catalog site Robert added on 2026-11-21.
+Its store name in Drive and the sheets is **pandavault**. It works
+differently from DHGate — do not run pandavault products through
+the DHGate workflow above.
+
+- **Its data lives in its own sheet:** Google Sheet "PandaVault
+  Catalog - Product Data" in the `designer clothing` Drive folder.
+  That sheet is the source of truth for pandavault products. Do
+  NOT put pandavault products in the cross-reference tracker or
+  the sourcing queue.
+- **The source data IS the public data.** Title, description,
+  clothing type, and colors are used on the website exactly as
+  the source lists them. There is no source-vs-public color
+  split, no numbering, no color remapping, and no reverse image
+  search — the source photos are the product photos.
+- **One product = one listing.** Each product is keyed by the
+  supplier's own SKU (the source uses the same code as its item
+  number). Keep the SKU on the back end only; it is how a
+  customer order is matched to the supplier item to buy.
+- **Ordering:** each row of the PandaVault sheet carries that
+  product's supplier ordering link (a Weidian item link). When a
+  customer orders a pandavault product, find its row by SKU in
+  the PandaVault sheet and order from that link. A few products
+  have no ordering link; they are flagged in the sheet and
+  cannot be ordered until a link exists.
+- **Photos:** filed in Drive under `designer clothing >
+  <category> > <brand> > pandavault > <SKU>`. The sheet's Drive
+  folder link column points at each product's folder. Use the
+  product's photos in source order; the first photo is the
+  display photo.
+- **Sizes** come from the source — the sheet carries each
+  product's sizes and an English size chart.
+- **Prices:** the sheet's CNY figures are the supplier's supply
+  prices — back end only, never publish them. The public retail
+  price is set by Robert, same as every other product.
+- **Warehouse / shipping:** the sheet records the source
+  warehouse per product; the public shipping time follows the
+  warehouse rule already in this workflow (China warehouse =
+  15 to 20 days; the warehouse itself is never shown publicly).
+- **Status (2026-11-21):** the full pandavault catalog (1,874
+  products) is extracted into the PandaVault sheet. Photo filing
+  into Drive is in progress: Celine first, winter before summer
+  (coats, hoodies, sweaters, then the rest), then the remaining
+  brands in the same order until the whole catalog is filed.
 
 ## Current state (2026-11-08)
 
