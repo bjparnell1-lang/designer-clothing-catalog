@@ -706,6 +706,33 @@ the DHGate workflow above.
   (coats, hoodies, sweaters, then the rest), then the remaining
   brands in the same order until the whole catalog is filed.
 
+### Connector quota fallback — Original Drive first (2026-11-21)
+
+Use the native ChatGPT Google Drive connector for the **Original** account
+\`bj.parnell1@gmail.com\` first. Original Drive is the source of truth.
+
+If that connector returns an upload-quota block:
+
+1. Do **not** re-upload a full product or brand set. Inventory the product
+   folders in Original Drive and build a list of only the exact missing
+   PandaVault photo filenames. The SKU in both the folder name and every
+   filename is the duplicate-prevention key.
+2. Stage only those missing files in the native ChatGPT Google Drive connector
+   for \`bj.parnell10@gmail.com\`, under a clearly temporary root folder named
+   \`PandaVault — <brand> — Remaining Upload\`. Mirror the final structure
+   beneath it: \`<category>/<brand>/pandavault/<SKU>/<filename>\`.
+3. Before using the fallback again, wait at least three hours and test
+   \`bj.parnell1@gmail.com\` with one file from the verified-missing list. If
+   the upload succeeds, continue filing directly into Original Drive. If it
+   remains blocked, continue the missing-only staging set in \`bj.parnell10\`.
+4. When Robert merges a staging set into Original Drive, verify the SKU folders
+   and filenames there first. Only then move the temporary \`bj.parnell10\`
+   root to Drive Trash (recoverable); never permanently delete it by default.
+
+Do not put staging-drive folder IDs or links in this repository. Keep the
+PandaVault sheet's Drive-folder links pointed at the final Original Drive
+product folders, not temporary staging folders.
+
 ## Current state (2026-11-08)
 
 - 11 items in `catalog.json` (8 real/done or in-progress, 2 deleted
