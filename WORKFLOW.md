@@ -733,6 +733,81 @@ Do not put staging-drive folder IDs or links in this repository. Keep the
 PandaVault sheet's Drive-folder links pointed at the final Original Drive
 product folders, not temporary staging folders.
 
+## Agent handoff — PandaVault Louis Vuitton import
+
+Read this section first when taking over the PandaVault job. It is the exact
+restart point, including what to retrieve, where to file it, and how to avoid
+duplicates.
+
+### Scope and priority
+
+- Import every published product whose source brand is exactly **Louis Vuitton**.
+  The source snapshot currently contains **77 products and 790 original photos**:
+  outerwear 32/292, knitwear 5/50, hoodies 1/8, shirts 2/17, long-sleeves 4/36,
+  t-shirts 7/74, trousers 13/112, and scarves 13/201.
+- Finish winter outerwear first (coats, padded jackets, and down jackets), then
+  continue through the remaining categories.
+- Preserve PandaVault source data exactly for public-facing use. Do not apply
+  DHGate renaming, color, or numbering rules to these products.
+
+### What to download and extract
+
+1. Retrieve the single source snapshot:
+   `https://pandavault.store/seed-workspace.v2.json`. Do **not** scrape product
+   pages one by one.
+2. Filter published records where the brand is exactly `Louis Vuitton`.
+3. For each record, retain the source brand, name/title, SKU (also the item
+   number), description, sizes, English size chart, price, warehouse, Weidian
+   link, record ID, and the complete ordered image list. The first source image
+   is the display image.
+4. Download **only photo URLs whose destination filenames are not already
+   present in the corresponding final Original Drive SKU folder**. Keep the
+   original image bytes; name every photo with its SKU and sequence, for example
+   `pandavault_BB901_001.jpg`.
+
+### Final locations and duplicate prevention
+
+- Final Drive layout:
+  `designer clothing/<category>/Louis Vuitton/pandavault/<SKU>/<files>`.
+  Each product gets its own SKU-named folder. The SKU in the folder name and in
+  every photo filename is the duplicate-prevention key.
+- The PandaVault Google Sheet is the product-data source of truth. Keep its
+  `Drive folder link` directed to the final **Original Drive** SKU folder only.
+  Never write staging Drive links or IDs into the Sheet or this repository.
+- Before uploading or moving a file, inventory the files already in the target
+  SKU folder and compare exact filenames. Do not re-upload matching photos.
+  Leave unmatched files in legacy flat folders alone until they are audited;
+  they are not proof that a source photo is correctly filed.
+
+### Resume procedure
+
+1. Fetch the snapshot, rebuild or read the LV manifest, and audit final
+   Original Drive SKU folders against the ordered source-image filenames.
+2. Make a verified missing-only queue, ordered: winter outerwear first, then
+   the remaining categories.
+3. Test `bj.parnell1@gmail.com` (Original Drive) with **one** file from that
+   queue before a batch. If it uploads, continue directly to the final SKU
+   folders and update the Sheet counts/links only after verification.
+4. If that test is quota-blocked, follow the **Connector quota fallback** below:
+   stage only verified missing files under `bj.parnell10@gmail.com`, preserving
+   the final folder structure. Do not create a second full catalog.
+5. On each handoff, update this section's progress snapshot and report:
+   source total, correctly filed final-photo count, remaining count, the next
+   SKU/category, and whether the Original connector is currently blocked.
+
+### Verified progress snapshot — 2026-11-21
+
+- Source scope: 77 LV products; 790 source photos.
+- Correctly structured in Original Drive: **238 photos** (237 re-filed from the
+  original flat outerwear folder plus one verified BB901 test upload).
+- Still required: **552 source photos**. That includes **54 outerwear photos**
+  plus 498 photos in the other LV categories.
+- All 77 final Original Drive SKU folders exist. The product rows are already
+  present in the PandaVault Google Sheet; do not add duplicate rows.
+- The native ChatGPT Drive upload layer rate-limited both linked accounts, so
+  changing Drive accounts did not bypass the rate limit. Re-test Original Drive
+  after the three-hour wait described below before using any staging fallback.
+
 ## Current state (2026-11-08)
 
 - 11 items in `catalog.json` (8 real/done or in-progress, 2 deleted
